@@ -1,0 +1,37 @@
+==========================================
+SLURM_JOB_ID = 22987738
+SLURM_JOB_NODELIST = a03-12
+TMPDIR = /tmp/SLURM_22987738
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.04996444444444444
+Validation positive example rate:
+ 0.05032
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+
+class weights:  [1.16954687e-06 2.22380359e-05]
+
+Training the model...
+slurmstepd: error: *** JOB 22987738 ON a03-12 CANCELLED AT 2024-04-26T22:21:02 ***

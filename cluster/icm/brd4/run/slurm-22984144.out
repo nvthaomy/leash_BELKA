@@ -1,0 +1,7 @@
+==========================================
+SLURM_JOB_ID = 22984144
+SLURM_JOB_NODELIST = b04-20
+TMPDIR = /tmp/SLURM_22984144
+==========================================
+1
+Docking inx file: ../files/train_BRD4_5k_posrate_0_05_smiles-Bu

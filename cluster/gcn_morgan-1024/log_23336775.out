@@ -1,0 +1,65 @@
+==========================================
+SLURM_JOB_ID = 23336775
+SLURM_JOB_NODELIST = a01-01
+TMPDIR = /tmp/SLURM_23336775
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  64
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.5051040649414062
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk1.pkl
+Memory used (in GB): 42.934391021728516
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk2.pkl
+Memory used (in GB): 64.8062629699707
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk3.pkl
+Memory used (in GB): 86.50077819824219
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk4.pkl
+Memory used (in GB): 108.24331665039062
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk5.pkl
+Memory used (in GB): 129.84068298339844
+
+X_train_fp shape:  (5000000, 2048)
+X_train_graph length:  5000000
+y_train shape:  (5000000, 3)
+
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 129.8920440673828
+
+Loading test data
+Protein counts: 
+protein_name
+BRD4    558859
+sEH     558142
+HSA     557895
+Name: count, dtype: int64
+
+Calculating fingerprints for test data
+Processing chunk: 1/4
+Exception in thread Thread-1 (_handle_workers):
+Traceback (most recent call last):
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/pool.py", line 516, in _handle_workers
+    cls._maintain_pool(ctx, Process, processes, pool, inqueue,
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/pool.py", line 340, in _maintain_pool
+    Pool._repopulate_pool_static(ctx, Process, processes, pool,
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/pool.py", line 329, in _repopulate_pool_static
+    w.start()
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/multiprocessing/popen_fork.py", line 66, in _launch
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory
+slurmstepd: error: *** JOB 23336775 ON a01-01 CANCELLED AT 2024-05-22T09:46:58 ***

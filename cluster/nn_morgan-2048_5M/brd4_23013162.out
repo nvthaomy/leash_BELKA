@@ -1,0 +1,20 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.4179534912109375
+Is CUDA available:  False
+Loading processed data from pickle files
+Memory used (in GB): 82.4962272644043
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.05001666666666667
+Validation positive example rate:
+ 0.04985
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 162.86502075195312
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-2048_5M/nn.py", line 317, in <module>
+    'NN5': Net5(n_features=args.fp_size, dropout_rate=dropout_rate)}
+NameError: name 'Net5' is not defined. Did you mean: 'Net'?

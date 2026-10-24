@@ -1,0 +1,86 @@
+
+Loading data...
+   buildingblock1_smiles  ...  sEH_posrate-0.048_size-15.0M
+0                    628  ...                          True
+1                    628  ...                         False
+2                    628  ...                         False
+3                    628  ...                         False
+4                    628  ...                         False
+
+[5 rows x 27 columns]
+Index(['buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'binds_BRD4', 'binds_HSA',
+       'binds_sEH', 'bb_test_noshare', 'bb_test_mixshare', 'random_test',
+       'full_test', 'posrate-0.050_size-0.005M', 'posrate-0.027_size-15.0M',
+       'posrate-0.041_size-10.0M', 'posrate-0.020_size-20.0M',
+       'posrate-0.082_size-5.0M', 'posrate-0.050_size-5.0M',
+       'posrate-0.010_size-5.0M',
+       'indp_posrate-0.010_size-each-5.0M_size-total-14.251M',
+       'indp_posrate-0.050_size-each-5.0M_size-total-14.240M',
+       'indp_posrate-0.050_size-each-2.0M_size-total-5.876M',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M', 'BRD4_posrate-0.030_size-15.0M',
+       'HSA_posrate-0.027_size-15.0M', 'sEH_posrate-0.048_size-15.0M'],
+      dtype='object')
+Train data shape: (98415610, 27)
+
+Positive rates:
+binds_BRD4    0.004643
+binds_HSA     0.004150
+binds_sEH     0.007362
+dtype: float64
+
+Positive counts:
+binds_BRD4    456964
+binds_HSA     408410
+binds_sEH     724532
+dtype: int64
+
+Target numbers of positive samples:
+{'BRD4': 456964, 'HSA': 408410, 'sEH': 500000}
+
+Statistics for split BRD4_posrate-0.046_size-10.0M:
+
+Positive rates:
+binds_BRD4    0.045696
+binds_HSA     0.004022
+binds_sEH     0.007116
+dtype: float64
+
+Positive counts:
+binds_BRD4    456964
+binds_HSA      40221
+binds_sEH      71162
+dtype: int64
+
+Statistics for split HSA_posrate-0.041_size-10.0M:
+
+Positive rates:
+binds_BRD4    0.004509
+binds_HSA     0.040841
+binds_sEH     0.014205
+dtype: float64
+
+Positive counts:
+binds_BRD4     45094
+binds_HSA     408410
+binds_sEH     142053
+dtype: int64
+
+Statistics for split sEH_posrate-0.050_size-10.0M:
+
+Positive rates:
+binds_BRD4    0.004465
+binds_HSA     0.008680
+binds_sEH     0.050000
+dtype: float64
+
+Positive counts:
+binds_BRD4     44652
+binds_HSA      86799
+binds_sEH     500000
+dtype: int64
+
+Number of samples shared between 3 splits: 106975
+
+Done!

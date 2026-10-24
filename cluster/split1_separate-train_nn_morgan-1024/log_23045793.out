@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 23045793
+SLURM_JOB_NODELIST = b22-02
+TMPDIR = /tmp/SLURM_23045793
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Memory used (in GB): 0.41649627685546875
+
+Loading processed train data from pickle/parquet files
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk1.parquet
+Memory used (in GB): 46.39611053466797
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk2.parquet
+Memory used (in GB): 69.43013763427734
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk3.parquet
+Memory used (in GB): 92.36814498901367
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk4.parquet
+Memory used (in GB): 115.26596450805664
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk5.parquet
+Memory used (in GB): 124.76266479492188
+
+Train data length: 14122319
+Positive example rate in train:  0.0059936331986269395
+Memory used (in GB): 108.56576538085938
+
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 110.4201889038086
+Memory used (in GB): 114.57024383544922
+Memory used (in GB): 114.63595581054688
+          id
+0  295246830
+1  295246833
+2  295246836
+3  295246839
+4  295246842
+Memory used (in GB): 112.8954849243164
+
+X_train shape:  (14122319, 1024)
+y_train shape:  (14122319, 1)
+X_test shape:  (558859, 1024)
+Device:  cpu
+Checkpoint directory:  checkpoints_NN4b_BRD4_03_1024bits_resampling-False_reweighting-False
+Memory used (in GB): 56.985076904296875
+
+Training the model...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split1_separate-train_nn_morgan-1024/nn.py", line 413, in <module>
+    train_score = average_precision_score(y_train_t.cpu().flatten(), y_train_pred.flatten())
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 268, in average_precision_score
+    return _average_binary_score(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_base.py", line 75, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 230, in _binary_uninterpolated_average_precision
+    precision, recall, _ = precision_recall_curve(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 965, in precision_recall_curve
+    fps, tps, thresholds = _binary_clf_curve(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 823, in _binary_clf_curve
+    assert_all_finite(y_score)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/validation.py", line 216, in assert_all_finite
+    _assert_all_finite(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/validation.py", line 126, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/validation.py", line 175, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input contains NaN.

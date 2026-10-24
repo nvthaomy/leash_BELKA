@@ -1,0 +1,117 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Memory used (in GB): 0.4137382507324219
+
+Loading processed train data from pickle/parquet files
+train_full_test_1024bits_chunk1.parquet
+Memory used (in GB): 46.41612243652344
+train_full_test_1024bits_chunk2.parquet
+Memory used (in GB): 69.50658798217773
+train_full_test_1024bits_chunk3.parquet
+Memory used (in GB): 92.42316055297852
+train_full_test_1024bits_chunk4.parquet
+Memory used (in GB): 115.36234283447266
+train_full_test_1024bits_chunk5.parquet
+Memory used (in GB): 124.87821960449219
+
+Train data length: 14122319
+Positive example rate in train:
+  BRD4:  0.0059936331986269395
+  HSA:  0.003475774764753579
+  sEH:  0.006788615948981184
+Memory used (in GB): 108.58112716674805
+
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 112.88762283325195
+Memory used (in GB): 121.46492385864258
+Memory used (in GB): 125.69087600708008
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+is_BRD4    558859
+is_HSA     557895
+is_sEH     558142
+dtype: int64
+Memory used (in GB): 121.44107818603516
+
+X_train shape:  (14122319, 1024)
+y_train shape:  (14122319, 3)
+X_test shape:  (1674896, 1024)
+Device:  cpu
+Checkpoint directory:  checkpoints_NN5b_02_1024bits_resampling-False_reweighting-False
+Memory used (in GB): 61.33481979370117
+
+Training the model...
+
+Epoch 2/1000, Loss: 0.0037249051965773106, Train Score: 0.029169108553865734
+Memory used (in GB): 61.85954666137695
+Time elapsed (min):  36.27
+
+Epoch 4/1000, Loss: 0.003869707463309169, Train Score: 0.029172998661688366
+Memory used (in GB): 61.8985710144043
+Time elapsed (min):  78.18
+
+Epoch 6/1000, Loss: 0.003951995633542538, Train Score: 0.02930883677775213
+Memory used (in GB): 61.86857986450195
+Time elapsed (min):  119.76
+
+Epoch 8/1000, Loss: 0.003552892943844199, Train Score: 0.029197106962000386
+Memory used (in GB): 61.86857986450195
+Time elapsed (min):  161.43
+
+Epoch 10/1000, Loss: 0.0037436920683830976, Train Score: 0.02916552422493803
+Memory used (in GB): 61.8720703125
+Time elapsed (min):  202.94
+
+Epoch 12/1000, Loss: 0.003527133259922266, Train Score: 0.029183789736589055
+Memory used (in GB): 61.915035247802734
+Time elapsed (min):  243.98
+
+Epoch 14/1000, Loss: 0.003596741007640958, Train Score: 0.02921446064472848
+Memory used (in GB): 61.91398620605469
+Time elapsed (min):  285.37
+
+Epoch 16/1000, Loss: 0.0037825247272849083, Train Score: 0.029218032733838092
+Memory used (in GB): 61.82963943481445
+Time elapsed (min):  325.95
+
+Epoch 18/1000, Loss: 0.0038825643714517355, Train Score: 0.029234581272723808
+Memory used (in GB): 61.86076736450195
+Time elapsed (min):  366.25
+
+Epoch 20/1000, Loss: 0.003646668279543519, Train Score: 0.02921159272822996
+Memory used (in GB): 61.86857986450195
+Time elapsed (min):  406.93
+
+Epoch 22/1000, Loss: 0.0038677151314914227, Train Score: 0.029298670385415344
+Memory used (in GB): 61.855403900146484
+Time elapsed (min):  447.28
+
+Epoch 24/1000, Loss: 0.0037153062876313925, Train Score: 0.02920112895742419
+Memory used (in GB): 61.87184143066406
+Time elapsed (min):  487.01
+
+Epoch 26/1000, Loss: 0.00378790101967752, Train Score: 0.02932383346790917
+Memory used (in GB): 61.86985397338867
+Time elapsed (min):  527.49
+
+Epoch 28/1000, Loss: 0.0036322635132819414, Train Score: 0.02915166710706874
+Memory used (in GB): 61.94253158569336
+Time elapsed (min):  567.51
+
+Epoch 30/1000, Loss: 0.0037414073012769222, Train Score: 0.029229825139236634
+Memory used (in GB): 61.86076736450195
+Time elapsed (min):  607.79
+Early stopping!
+Time elapsed (min):  628.27
+Train Loss: 0.0037576535250991583
+Train Score: 0.029230162004742478
+
+
+Making predictions on test data...
+
+Finished

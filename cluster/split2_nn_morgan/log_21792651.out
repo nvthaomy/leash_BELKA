@@ -1,0 +1,33 @@
+==========================================
+SLURM_JOB_ID = 21792651
+SLURM_JOB_NODELIST = a12-04
+TMPDIR = /tmp/SLURM_21792651
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.041_size-10.0M
+Memory used (in GB): 0.4714546203613281
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk1.parquet
+Memory used (in GB): 15.82613754272461
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk10.parquet
+Memory used (in GB): 31.131195068359375
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk2.parquet
+Memory used (in GB): 46.44212341308594
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk3.parquet
+Memory used (in GB): 61.713260650634766
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk4.parquet
+Memory used (in GB): 76.98705673217773
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk5.parquet
+Memory used (in GB): 92.24819564819336
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk6.parquet
+Memory used (in GB): 107.52519989013672
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk7.parquet
+Memory used (in GB): 122.79081726074219
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk8.parquet
+Memory used (in GB): 138.09209442138672
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk9.parquet
+/var/spool/slurm/d/job21792651/slurm_script: line 45: 34043 Killed                  python -u nn_v3.5.py -gpu -split $split -fp_invar_size 1024 -model_name NN5 -load_model $model
+slurmstepd: error: Detected 1 oom_kill event in StepId=21792651.batch. Some of the step tasks have been OOM Killed.

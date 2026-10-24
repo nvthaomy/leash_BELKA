@@ -1,0 +1,68 @@
+==========================================
+SLURM_JOB_ID = 22957896
+SLURM_JOB_NODELIST = b04-15
+TMPDIR = /tmp/SLURM_22957896
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.005352222222222223
+Validation positive example rate:
+ 0.00568
+Overall positive example rate in train + validation:  0.005385
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+
+class weights:  [1.11709003e-06 1.11709003e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.030772097408771515
+Time elapsed (min):  91.25
+Epoch 10/1000, Loss: 0.011454817838966846
+Time elapsed (min):  182.25
+Epoch 15/1000, Loss: 0.009085394442081451
+Time elapsed (min):  273.09
+Epoch 20/1000, Loss: 0.0039016390219330788
+Time elapsed (min):  363.83
+Epoch 25/1000, Loss: 0.021251587197184563
+Time elapsed (min):  454.71
+Epoch 30/1000, Loss: 0.04249684885144234
+Time elapsed (min):  545.98
+Early stopping!
+Time elapsed (min):  564.49
+Train Loss: 0.008261239156126976
+Validation Loss: 0.015059463679790497
+
+Train Score: 0.9999301556604747
+Validation Score: 0.5237359903508688
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_1M/nn.py", line 374, in <module>
+    plt.figure(figsize=(4, 4))
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

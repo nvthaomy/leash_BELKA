@@ -1,0 +1,25 @@
+==========================================
+SLURM_JOB_ID = 23012812
+SLURM_JOB_NODELIST = a02-08
+TMPDIR = /tmp/SLURM_23012812
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.42809295654296875
+Is CUDA available:  False
+Loading processed data from pickle files
+Memory used (in GB): 160.37277603149414
+
+Train size:  9000000
+Validation size:  1000000
+
+Train positive example rate:
+ 0.040857333333333336
+Validation positive example rate:
+ 0.040694
+Overall positive example rate in train + validation:  0.040841
+Memory used (in GB): 86.12002944946289
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_10M/nn.py", line 320, in <module>
+    model_dict = {'NN': Net(n_features=X_test.shape[1], dropout_rate=dropout_rate),
+NameError: name 'X_test' is not defined. Did you mean: 'X_test_t'?

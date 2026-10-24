@@ -1,0 +1,32 @@
+==========================================
+SLURM_JOB_ID = 22986091
+SLURM_JOB_NODELIST = b01-01
+TMPDIR = /tmp/SLURM_22986091
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  64
+Memory used (in GB): 0.4560585021972656
+Is CUDA available:  True
+Loading processed data from pickle files
+Memory used (in GB): 0.718963623046875
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.05002644444444444
+Validation positive example rate:
+ 0.049762
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 13.36810302734375
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500000,)
+y_train shape:  (4500000,)
+X_validation shape:  (500000, 1024)
+y_validation shape:  (500000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [2.33924640e-07 4.44209507e-06]
+
+Training the model...
+slurmstepd: error: *** JOB 22986091 ON b01-01 CANCELLED AT 2024-04-27T10:14:53 ***

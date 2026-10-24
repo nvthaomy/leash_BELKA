@@ -1,0 +1,74 @@
+==========================================
+SLURM_JOB_ID = 22973515
+SLURM_JOB_NODELIST = d06-15
+TMPDIR = /tmp/SLURM_22973515
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.049555555555555554
+Validation positive example rate:
+ 0.054
+Overall positive example rate in train + validation:  0.05
+
+X_train shape:  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023381 0.0044843 ]
+
+Training the model...
+Epoch 5/1000, Loss: 0.24016112089157104
+Time elapsed (min):  0.66
+Epoch 10/1000, Loss: 0.10910293459892273
+Time elapsed (min):  1.28
+Epoch 15/1000, Loss: 0.22049419581890106
+Time elapsed (min):  1.93
+Epoch 20/1000, Loss: 0.11551053822040558
+Time elapsed (min):  2.56
+Epoch 25/1000, Loss: 0.23465484380722046
+Time elapsed (min):  3.19
+Epoch 30/1000, Loss: 0.17977114021778107
+Time elapsed (min):  3.82
+Epoch 35/1000, Loss: 0.11247279495000839
+Time elapsed (min):  4.45
+Epoch 40/1000, Loss: 0.16936418414115906
+Time elapsed (min):  5.09
+Epoch 45/1000, Loss: 0.17271074652671814
+Time elapsed (min):  5.73
+Epoch 50/1000, Loss: 0.18134388327598572
+Time elapsed (min):  6.37
+Epoch 55/1000, Loss: 0.17924629151821136
+Time elapsed (min):  7.01
+Epoch 60/1000, Loss: 0.09123671799898148
+Time elapsed (min):  7.65
+Epoch 65/1000, Loss: 0.3342517912387848
+Time elapsed (min):  8.3
+Epoch 70/1000, Loss: 0.14921779930591583
+Time elapsed (min):  8.93
+Epoch 75/1000, Loss: 0.16355100274085999
+Time elapsed (min):  9.57
+Epoch 80/1000, Loss: 0.25763699412345886
+Time elapsed (min):  10.21
+Early stopping!
+Time elapsed (min):  10.46
+Train Loss: 0.24661216139793396
+Validation Loss: 0.20784465968608856
+
+Train Score: 0.05405077334270916
+Validation Score: 0.08127239633778732
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn_v2.py", line 407, in <module>
+    plt.scatter(y_train_t, y_train_pred, marker='o', alpha=0.5, label='Train')
+NameError: name 'y_train_pred' is not defined. Did you mean: 'y_train_t'?

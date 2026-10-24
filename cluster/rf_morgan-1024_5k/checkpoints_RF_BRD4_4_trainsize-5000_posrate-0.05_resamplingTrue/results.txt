@@ -1,0 +1,5 @@
+Train MEAN scores: 1.0000 +/- 0.0000
+Validation MEAN scores: 0.9852 +/- 0.0048
+
+Train MEAN RMSE: 0.0000 +/- 0.0000
+Validation MEAN RMSE: 0.1163 +/- 0.0169

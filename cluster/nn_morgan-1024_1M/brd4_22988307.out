@@ -1,0 +1,11 @@
+==========================================
+SLURM_JOB_ID = 22988307
+SLURM_JOB_NODELIST = b05-10
+TMPDIR = /tmp/SLURM_22988307
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  32
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_1M/nn_v2.py", line 51, in <module>
+    check_memory(pid=os.getpid())
+NameError: name 'check_memory' is not defined

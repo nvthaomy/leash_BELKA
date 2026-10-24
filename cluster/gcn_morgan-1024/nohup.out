@@ -1,0 +1,104 @@
+Number of available GPUs:  1
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.050_size-0.005M
+Memory used (in GB): 0.4804649353027344
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.050_size-0.005M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 0.6224136352539062
+
+X_train_fp shape:  (5000, 1024)
+X_train_graph length:  5000
+y_train shape:  (5000, 3)
+
+Positive example rate in train:
+  BRD4:  0.05
+  HSA:  0.05
+  sEH:  0.05
+Memory used (in GB): 0.6224517822265625
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+
+=== Fold 1/5 ===
+X_train length:  4000
+y_train shape:  (4000, 3)
+X_val length:  1000
+y_val shape:  (1000, 3)
+Memory used (in GB): 0.8279647827148438
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.1879243701696396, Train Score: 0.151630811557551
+Validation Loss: 0.3109312057495117, Validation Score: 0.5422979341452014
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.02
+
+Epoch 10/500
+Train Loss: 0.13576801121234894, Train Score: 0.5400095601465632
+Validation Loss: 0.21924051642417908, Validation Score: 0.6251937567462502
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.04
+
+Epoch 15/500
+Train Loss: 0.09061912447214127, Train Score: 0.7701996562935031
+Validation Loss: 0.15311332046985626, Validation Score: 0.7029198023097337
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.06
+
+Epoch 20/500
+Train Loss: 0.042841993272304535, Train Score: 0.9479006329133209
+Validation Loss: 0.1224474161863327, Validation Score: 0.7382130275433285
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.08
+
+Epoch 25/500
+Train Loss: 0.007033293601125479, Train Score: 0.9929805876850271
+Validation Loss: 0.11544335633516312, Validation Score: 0.7326154568991359
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.1
+
+Epoch 30/500
+Train Loss: 0.007845361717045307, Train Score: 0.9990313922393689
+Validation Loss: 0.12048439681529999, Validation Score: 0.7353793451019469
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.12
+
+Epoch 35/500
+Train Loss: 0.006083855405449867, Train Score: 0.9998668181756991
+Validation Loss: 0.12906330823898315, Validation Score: 0.7153547533202561
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.14
+
+Epoch 40/500
+Train Loss: 0.003546465653926134, Train Score: 0.9998987022206945
+Validation Loss: 0.12095823138952255, Validation Score: 0.732239350850872
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.16
+
+Epoch 45/500
+Train Loss: 0.0025369487702846527, Train Score: 0.9998831223597217
+Validation Loss: 0.12312424927949905, Validation Score: 0.7372862366970242
+Memory used (in GB): 1.0814323425292969
+Time elapsed (min):  0.17
+Early stopping!
+Time elapsed (min):  0.19
+
+Train Loss: 0.005292912479490042
+Train Score: 0.997473136911496
+
+Validation Loss: 0.11481214314699173
+Validation Score: 0.7243556744419918
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.445964813232422
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.833984375
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl

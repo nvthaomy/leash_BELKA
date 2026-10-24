@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 22960319
+SLURM_JOB_NODELIST = a04-08
+TMPDIR = /tmp/SLURM_22960319
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.050222222222222224
+Validation positive example rate:
+ 0.048
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+Training the model...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/rf_morgan-1024_5k/rf.py", line 270, in <module>
+    y_test_pred_list.append(y_test_pred.numpy().flatten())
+AttributeError: 'numpy.ndarray' object has no attribute 'numpy'. Did you mean: 'dump'?

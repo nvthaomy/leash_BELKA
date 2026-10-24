@@ -1,0 +1,276 @@
+==========================================
+SLURM_JOB_ID = 22923625
+SLURM_JOB_NODELIST = a01-02
+TMPDIR = /tmp/SLURM_22923625
+==========================================
+=== NN_BRD4_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004639507899204202
+Validation positive example rate:
+ 0.004676493901729614
+
+Calculating fingerprints for train data
+Batch 10/88575
+Memory used (in GB): 17.865638732910156
+Batch 20/88575
+Memory used (in GB): 17.865642547607422
+Batch 30/88575
+Memory used (in GB): 17.865650177001953
+Batch 40/88575
+Memory used (in GB): 17.86614990234375
+Batch 50/88575
+Memory used (in GB): 17.867206573486328
+Batch 60/88575
+Memory used (in GB): 17.868267059326172
+Batch 70/88575
+Memory used (in GB): 17.869312286376953
+Batch 80/88575
+Memory used (in GB): 17.870372772216797
+Batch 90/88575
+Memory used (in GB): 17.871417999267578
+Batch 100/88575
+Memory used (in GB): 17.872478485107422
+Batch 110/88575
+Memory used (in GB): 17.873523712158203
+Batch 120/88575
+Memory used (in GB): 17.874584197998047
+Batch 130/88575
+Memory used (in GB): 17.875633239746094
+Batch 140/88575
+Memory used (in GB): 17.87668228149414
+Batch 150/88575
+Memory used (in GB): 17.877735137939453
+Batch 160/88575
+Memory used (in GB): 17.878787994384766
+Batch 170/88575
+Memory used (in GB): 17.881149291992188
+Batch 180/88575
+Memory used (in GB): 17.88458251953125
+Batch 190/88575
+Memory used (in GB): 17.8875732421875
+Batch 200/88575
+Memory used (in GB): 17.891632080078125
+Batch 210/88575
+Memory used (in GB): 17.89403533935547
+Batch 220/88575
+Memory used (in GB): 17.89727020263672
+Batch 230/88575
+Memory used (in GB): 17.9005126953125
+Batch 240/88575
+Memory used (in GB): 17.903728485107422
+Batch 250/88575
+Memory used (in GB): 17.908580780029297
+Batch 260/88575
+Memory used (in GB): 17.910221099853516
+Batch 270/88575
+Memory used (in GB): 17.913436889648438
+Batch 280/88575
+Memory used (in GB): 17.916667938232422
+Batch 290/88575
+Memory used (in GB): 17.92031478881836
+Batch 300/88575
+Memory used (in GB): 17.923126220703125
+Batch 310/88575
+Memory used (in GB): 17.926361083984375
+Batch 320/88575
+Memory used (in GB): 17.93152618408203
+Batch 330/88575
+Memory used (in GB): 17.93282699584961
+Batch 340/88575
+Memory used (in GB): 17.93606185913086
+Batch 350/88575
+Memory used (in GB): 17.939289093017578
+Batch 360/88575
+Memory used (in GB): 17.944766998291016
+Batch 370/88575
+Memory used (in GB): 17.94588851928711
+Batch 380/88575
+Memory used (in GB): 17.948989868164062
+Batch 390/88575
+Memory used (in GB): 17.95224380493164
+Batch 400/88575
+Memory used (in GB): 17.955482482910156
+Batch 410/88575
+Memory used (in GB): 17.960227966308594
+Batch 420/88575
+Memory used (in GB): 17.962093353271484
+Batch 430/88575
+Memory used (in GB): 17.96533203125
+Batch 440/88575
+Memory used (in GB): 17.968555450439453
+Batch 450/88575
+Memory used (in GB): 17.971817016601562
+Batch 460/88575
+Memory used (in GB): 17.977142333984375
+Batch 470/88575
+Memory used (in GB): 17.97827911376953
+Batch 480/88575
+Memory used (in GB): 17.981597900390625
+Batch 490/88575
+Memory used (in GB): 17.984832763671875
+Batch 500/88575
+Memory used (in GB): 17.988056182861328
+Batch 510/88575
+Memory used (in GB): 17.991275787353516
+Batch 520/88575
+Memory used (in GB): 17.996646881103516
+Batch 530/88575
+Memory used (in GB): 17.99789047241211
+Batch 540/88575
+Memory used (in GB): 18.001041412353516
+Batch 550/88575
+Memory used (in GB): 18.00421142578125
+Batch 560/88575
+Memory used (in GB): 18.00745391845703
+Batch 570/88575
+Memory used (in GB): 18.01067352294922
+Batch 580/88575
+Memory used (in GB): 18.01714324951172
+Batch 590/88575
+Memory used (in GB): 18.01825714111328
+Batch 600/88575
+Memory used (in GB): 18.020370483398438
+Batch 610/88575
+Memory used (in GB): 18.023605346679688
+Batch 620/88575
+Memory used (in GB): 18.026844024658203
+Batch 630/88575
+Memory used (in GB): 18.030078887939453
+Batch 640/88575
+Memory used (in GB): 18.033294677734375
+Batch 650/88575
+Memory used (in GB): 18.04071044921875
+Batch 660/88575
+Memory used (in GB): 18.041839599609375
+Batch 670/88575
+Memory used (in GB): 18.042991638183594
+Batch 680/88575
+Memory used (in GB): 18.046215057373047
+Batch 690/88575
+Memory used (in GB): 18.049449920654297
+Batch 700/88575
+Memory used (in GB): 18.052692413330078
+Batch 710/88575
+Memory used (in GB): 18.055923461914062
+Batch 720/88575
+Memory used (in GB): 18.059154510498047
+Batch 730/88575
+Memory used (in GB): 18.06757354736328
+Batch 740/88575
+Memory used (in GB): 18.068622589111328
+Batch 750/88575
+Memory used (in GB): 18.06967544555664
+Batch 760/88575
+Memory used (in GB): 18.072078704833984
+Batch 770/88575
+Memory used (in GB): 18.0753173828125
+Batch 780/88575
+Memory used (in GB): 18.07854461669922
+Batch 790/88575
+Memory used (in GB): 18.081768035888672
+Batch 800/88575
+Memory used (in GB): 18.08499526977539
+Batch 810/88575
+Memory used (in GB): 18.088241577148438
+Batch 820/88575
+Memory used (in GB): 18.09734344482422
+Batch 830/88575
+Memory used (in GB): 18.098472595214844
+Batch 840/88575
+Memory used (in GB): 18.09960174560547
+Batch 850/88575
+Memory used (in GB): 18.101150512695312
+Batch 860/88575
+Memory used (in GB): 18.10440444946289
+Batch 870/88575
+Memory used (in GB): 18.107643127441406
+Batch 880/88575
+Memory used (in GB): 18.11086654663086
+Batch 890/88575
+Memory used (in GB): 18.11410140991211
+Batch 900/88575
+Memory used (in GB): 18.117324829101562
+Batch 910/88575
+Memory used (in GB): 18.120548248291016
+Batch 920/88575
+Memory used (in GB): 18.123783111572266
+Batch 930/88575
+Memory used (in GB): 18.132190704345703
+Batch 940/88575
+Memory used (in GB): 18.133316040039062
+Batch 950/88575
+Memory used (in GB): 18.134445190429688
+Batch 960/88575
+Memory used (in GB): 18.136714935302734
+Batch 970/88575
+Memory used (in GB): 18.139934539794922
+Batch 980/88575
+Memory used (in GB): 18.143177032470703
+Batch 990/88575
+Memory used (in GB): 18.146404266357422
+Batch 1000/88575
+Memory used (in GB): 18.14963150024414
+Batch 1010/88575
+Memory used (in GB): 18.152847290039062
+Batch 1020/88575
+Memory used (in GB): 18.156112670898438
+Batch 1030/88575
+Memory used (in GB): 18.159324645996094
+Batch 1040/88575
+Memory used (in GB): 18.170501708984375
+Batch 1050/88575
+Memory used (in GB): 18.171558380126953
+Batch 1060/88575
+Memory used (in GB): 18.172607421875
+Batch 1070/88575
+Memory used (in GB): 18.173664093017578
+Batch 1080/88575
+Memory used (in GB): 18.175827026367188
+Batch 1090/88575
+Memory used (in GB): 18.17898941040039
+Batch 1100/88575
+Memory used (in GB): 18.182151794433594
+Batch 1110/88575
+Memory used (in GB): 18.185302734375
+Batch 1120/88575
+Memory used (in GB): 18.188446044921875
+Batch 1130/88575
+Memory used (in GB): 18.19164276123047
+Batch 1140/88575
+Memory used (in GB): 18.194866180419922
+Batch 1150/88575
+Memory used (in GB): 18.19808578491211
+Batch 1160/88575
+Memory used (in GB): 18.201339721679688
+Batch 1170/88575
+Memory used (in GB): 18.213478088378906
+Batch 1180/88575
+Memory used (in GB): 18.21453094482422
+Batch 1190/88575
+Memory used (in GB): 18.21558380126953
+Batch 1200/88575
+Memory used (in GB): 18.216636657714844
+Batch 1210/88575
+Memory used (in GB): 18.217838287353516
+Batch 1220/88575
+Memory used (in GB): 18.22100067138672
+Batch 1230/88575
+Memory used (in GB): 18.22414779663086
+Batch 1240/88575
+Memory used (in GB): 18.22730255126953
+Batch 1250/88575
+Memory used (in GB): 18.230464935302734
+Batch 1260/88575
+Memory used (in GB): 18.233642578125
+Batch 1270/88575
+Memory used (in GB): 18.236865997314453
+Batch 1280/88575
+Memory used (in GB): 18.24010467529297
+slurmstepd: error: *** JOB 22923625 ON a01-02 CANCELLED AT 2024-04-20T15:45:04 ***

@@ -1,0 +1,35 @@
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.049555555555555554
+Validation positive example rate:
+ 0.054
+Overall positive example rate in train + validation:  0.05
+X_train shape:  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023381 0.0044843 ]
+
+Training the model...
+(41, 1024)
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn_v2.py", line 342, in <module>
+    loss = criterion(outputs, targets.view(-1, 1))
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 618, in forward
+    return F.binary_cross_entropy(input, target, weight=self.weight, reduction=self.reduction)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/functional.py", line 3145, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([256, 1])) that is different to the input size (torch.Size([41, 1])) is deprecated. Please ensure they have the same size.

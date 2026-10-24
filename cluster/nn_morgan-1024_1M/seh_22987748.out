@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 22987748
+SLURM_JOB_NODELIST = a03-13
+TMPDIR = /tmp/SLURM_22987748
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.050207777777777775
+Validation positive example rate:
+ 0.04813
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558142, 1024)
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_1M/nn.py", line 255, in <module>
+    model = Net4(n_features=X_train.shape[1], dropout_rate=dropout_rate).to(device)
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_1M/tools.py", line 149, in __init__
+    super(Net4, self).__init__()
+TypeError: super(type, obj): obj must be an instance or subtype of type

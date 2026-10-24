@@ -1,0 +1,54 @@
+==========================================
+SLURM_JOB_ID = 23319485
+SLURM_JOB_NODELIST = b22-04
+TMPDIR = /tmp/SLURM_23319485
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.48328399658203125
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 27.653709411621094
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 41.89815902709961
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 55.96323776245117
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 70.07403945922852
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk5.pkl
+Memory used (in GB): 84.03856658935547
+
+X_train_fp shape:  (5000000, 1024)
+X_train_graph length:  5000000
+y_train shape:  (5000000, 3)
+
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 84.0915641784668
+Is CUDA available:  False
+Device:  cpu
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+FPGCN device: cpu
+Loaded model:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/5 ===
+X_train length:  4000000
+y_train shape:  (4000000, 3)
+X_val length:  1000000
+y_val shape:  (1000000, 3)
+Memory used (in GB): 122.70733642578125
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.11823426932096481, Train Score: 0.8568489178311575
+Validation Loss: 0.09534906595945358, Validation Score: 0.8733490782217399
+Memory used (in GB): 122.93427658081055
+Time elapsed (min):  76.91
+slurmstepd: error: *** JOB 23319485 ON b22-04 CANCELLED AT 2024-05-21T16:38:20 ***

@@ -1,0 +1,26 @@
+ssh: connect to host discovery.usc.edu port 22: Operation timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at /AppleInternal/Library/BuildRoots/4e1473ee-9f66-11ee-8daf-cedaeb4cabe2/Library/Caches/com.apple.xbs/Sources/rsync/rsync/io.c(453) [sender=2.6.9]
+ssh: connect to host discovery.usc.edu port 22: Operation timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at /AppleInternal/Library/BuildRoots/4e1473ee-9f66-11ee-8daf-cedaeb4cabe2/Library/Caches/com.apple.xbs/Sources/rsync/rsync/io.c(453) [sender=2.6.9]
+building file list ... done
+
+sent 3.20K bytes  received 20 bytes  1.29K bytes/sec
+total size is 284.20M  speedup is 88370.82
+building file list ... done
+
+sent 11.49K bytes  received 20 bytes  4.60K bytes/sec
+total size is 9.80G  speedup is 851083.57
+building file list ... done
+
+sent 38.66K bytes  received 20 bytes  15.47K bytes/sec
+total size is 12.94G  speedup is 334483.90
+building file list ... done
+
+sent 91 bytes  received 20 bytes  44.40 bytes/sec
+total size is 960  speedup is 8.65
+building file list ... done
+
+sent 323 bytes  received 20 bytes  137.20 bytes/sec
+total size is 84.38K  speedup is 246.01

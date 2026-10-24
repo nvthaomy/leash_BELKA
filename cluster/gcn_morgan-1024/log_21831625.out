@@ -1,0 +1,28 @@
+==========================================
+SLURM_JOB_ID = 21831625
+SLURM_JOB_NODELIST = a12-02
+TMPDIR = /tmp/SLURM_21831625
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.4834098815917969
+Memory used (in GB): 0.4834098815917969
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar1024bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+
+Prepare dataset
+Loading data...
+File: processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk1.pkl
+Memory used (in GB): 28.5477294921875
+File: processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk2.pkl
+Memory used (in GB): 50.73910903930664
+File: processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk3.pkl
+Memory used (in GB): 72.87803268432617
+File: processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk4.pkl
+Memory used (in GB): 95.01944732666016
+File: processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk5.pkl

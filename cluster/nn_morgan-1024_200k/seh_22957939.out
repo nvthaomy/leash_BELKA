@@ -1,0 +1,84 @@
+==========================================
+SLURM_JOB_ID = 22957939
+SLURM_JOB_NODELIST = b22-09
+TMPDIR = /tmp/SLURM_22957939
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein sEH:  (98415610, 7)
+
+Generating shorter train data for protein sEH, positive rate = 0.0054, total number of train data = 200000
+Short train data shape for protein sEH:  (200000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.48
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.13
+
+Train size:  180000
+Validation size:  20000
+
+Train positive example rate:
+ 0.005322222222222222
+Validation positive example rate:
+ 0.0061
+Overall positive example rate in train + validation:  0.0054
+
+before removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558142, 1024)
+
+after removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558142, 1024)
+
+class weights:  [5.58528167e-06 5.58528167e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.002530595287680626
+Time elapsed (min):  19.22
+Epoch 10/1000, Loss: 0.007202513981610537
+Time elapsed (min):  38.27
+Epoch 15/1000, Loss: 0.003286688355728984
+Time elapsed (min):  57.23
+Epoch 20/1000, Loss: 0.003016520757228136
+Time elapsed (min):  75.89
+Epoch 25/1000, Loss: 0.005993946455419064
+Time elapsed (min):  94.78
+Epoch 30/1000, Loss: 0.0013688438339158893
+Time elapsed (min):  113.4
+Epoch 35/1000, Loss: 0.0037243091501295567
+Time elapsed (min):  132.49
+Epoch 40/1000, Loss: 0.0018878354458138347
+Time elapsed (min):  151.98
+Epoch 45/1000, Loss: 0.01135738380253315
+Time elapsed (min):  170.83
+Early stopping!
+Time elapsed (min):  185.89
+Train Loss: 0.0027490737847983837
+Validation Loss: 0.01763761229813099
+
+Train Score: 0.999959852846225
+Validation Score: 0.5292416989856534
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_200k/nn.py", line 374, in <module>
+    plt.figure(figsize=(4, 4))
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

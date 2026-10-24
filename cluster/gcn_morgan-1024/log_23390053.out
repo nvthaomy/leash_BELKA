@@ -1,0 +1,74 @@
+==========================================
+SLURM_JOB_ID = 23390053
+SLURM_JOB_NODELIST = d05-29
+TMPDIR = /tmp/SLURM_23390053
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  24
+Debug mode:  False
+Split name:  posrate-0.050_size-0.005M
+Memory used (in GB): 0.47263336181640625
+
+Loading test data
+Protein counts: 
+protein_name
+BRD4    558859
+sEH     558142
+HSA     557895
+Name: count, dtype: int64
+
+Calculating fingerprints for test data
+Processing chunk: 1/4
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:293: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:298: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_graph'] = test_graphs
+Processing chunk: 2/4
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:293: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:298: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_graph'] = test_graphs
+Processing chunk: 3/4
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:293: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:298: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_graph'] = test_graphs
+Processing chunk: 4/4
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:293: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:298: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_graph'] = test_graphs
+Time elapsed (min):  20.16
+Skip training model. Done!

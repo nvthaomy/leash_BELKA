@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 22968088
+SLURM_JOB_NODELIST = a02-09
+TMPDIR = /tmp/SLURM_22968088
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+
+Generating shorter train data for protein HSA, positive rate = 0.005, total number of train data = 5000000
+Short train data shape for protein HSA:  (5000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  8.59
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.02
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.004986666666666667
+Validation positive example rate:
+ 0.00512
+Overall positive example rate in train + validation:  0.005
+
+class weights:  [2.23335924e-07 4.45632799e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.0025760671123862267
+Time elapsed (min):  225.48
+Epoch 10/1000, Loss: 0.004148743115365505
+Time elapsed (min):  450.58
+Epoch 15/1000, Loss: 0.0024761937092989683
+Time elapsed (min):  676.15

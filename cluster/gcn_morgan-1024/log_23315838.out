@@ -1,0 +1,37 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.4950408935546875
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 27.664154052734375
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 41.90934753417969
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 55.973876953125
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 70.08456039428711
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk5.pkl
+Memory used (in GB): 84.05034255981445
+
+X_train_fp shape:  (5000000, 1024)
+X_train_graph length:  5000000
+y_train shape:  (5000000, 3)
+
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 84.10170364379883
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+Loaded model:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/5 ===
+/var/spool/slurm/d/job23315838/slurm_script: line 45: 13151 Killed                  python -u nn_v3.5.py -split_name $split -gpu -train_path $path -model_name FPGCN -load_model $model
+slurmstepd: error: Detected 1 oom_kill event in StepId=23315838.batch. Some of the step tasks have been OOM Killed.

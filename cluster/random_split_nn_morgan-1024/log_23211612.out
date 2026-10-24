@@ -1,0 +1,245 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  BRD4_posrate-0.046_size-10.0M
+
+Loading train data
+Columns:  Index(['buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'binds_BRD4', 'binds_HSA',
+       'binds_sEH', 'bb_test_noshare', 'bb_test_mixshare', 'random_test',
+       'full_test', 'posrate-0.050_size-0.005M', 'posrate-0.027_size-15.0M',
+       'posrate-0.041_size-10.0M', 'posrate-0.020_size-20.0M',
+       'posrate-0.082_size-5.0M', 'posrate-0.050_size-5.0M',
+       'posrate-0.010_size-5.0M',
+       'indp_posrate-0.010_size-each-5.0M_size-total-14.251M',
+       'indp_posrate-0.050_size-each-5.0M_size-total-14.240M',
+       'indp_posrate-0.050_size-each-2.0M_size-total-5.876M',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M', 'BRD4_posrate-0.030_size-15.0M',
+       'HSA_posrate-0.027_size-15.0M', 'sEH_posrate-0.048_size-15.0M',
+       'BRD4_posrate-0.046_size-10.0M', 'HSA_posrate-0.041_size-10.0M',
+       'sEH_posrate-0.050_size-10.0M'],
+      dtype='object')
+Length of train data in split: 10000000
+Number of samples in BRD4_posrate-0.046_size-10.0M that are in the full_test set: 1452079
+
+Calculating fingerprints for train data
+Processing chunk: 1/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 2/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 3/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 4/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 5/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 6/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 7/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 8/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 9/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 10/10
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Time elapsed (min):  23.48
+Memory used (in GB): 2.196430206298828
+
+Loading processed train data from pickle/parquet files
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 9.889747619628906
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 17.583709716796875
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 25.2706298828125
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 32.94058609008789
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk5.parquet
+Memory used (in GB): 40.629364013671875
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk6.parquet
+Memory used (in GB): 48.32075119018555
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk7.parquet
+Memory used (in GB): 56.00563049316406
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk8.parquet
+Memory used (in GB): 63.68444061279297
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk9.parquet
+Memory used (in GB): 71.35715866088867
+train_BRD4_posrate-0.046_size-10.0M_1024bits_invar0bits_chunk10.parquet
+Memory used (in GB): 79.04526901245117
+
+Train data length: 10000000
+Positive example rate in train:
+  BRD4:  0.0456964
+Memory used (in GB): 79.04526901245117
+
+X_train shape:  (10000000, 1024)
+y_train shape:  (10000000, 1)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_BRD4_posrate-0.046_size-10.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_BRD4_posrate-0.050_size-5.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-6.pth
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([8333333, 1024])
+y_train_t shape:  torch.Size([8333333, 1])
+X_val_t shape:  torch.Size([1666667, 1024])
+y_val_t shape:  torch.Size([1666667, 1])
+Memory used (in GB): 79.75955200195312
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.015054789371788502, Train Score: 0.7112012915889943
+Validation Loss: 0.12399975210428238, Validation Score: 0.5621919356051419
+Memory used (in GB): 80.01645278930664
+Time elapsed (min):  10.71
+
+Epoch 10/1000
+Train Loss: 0.02615704946219921, Train Score: 0.7141005309967693
+Validation Loss: 0.1189749538898468, Validation Score: 0.5500124797697004
+Memory used (in GB): 80.01892852783203
+Time elapsed (min):  21.62
+
+Epoch 15/1000
+Train Loss: 0.011646094731986523, Train Score: 0.7140837816072317
+Validation Loss: 0.11869531869888306, Validation Score: 0.5658873309061266
+Memory used (in GB): 80.0178337097168
+Time elapsed (min):  32.51
+
+Epoch 20/1000
+Train Loss: 0.020338602364063263, Train Score: 0.7143186495497447
+Validation Loss: 0.11778820306062698, Validation Score: 0.5621387713479502
+Memory used (in GB): 80.01802062988281
+Time elapsed (min):  43.36
+
+Epoch 25/1000
+Train Loss: 0.047391194850206375, Train Score: 0.7156124286613964
+Validation Loss: 0.11282022297382355, Validation Score: 0.5682373203183708
+Memory used (in GB): 80.01784896850586
+Time elapsed (min):  54.15
+
+Epoch 30/1000
+Train Loss: 0.060340434312820435, Train Score: 0.7162123069302342
+Validation Loss: 0.1136908307671547, Validation Score: 0.5724928090301886
+Memory used (in GB): 80.01788711547852
+Time elapsed (min):  64.85
+
+Epoch 35/1000
+Train Loss: 0.022766022011637688, Train Score: 0.714041889558651
+Validation Loss: 0.10939337313175201, Validation Score: 0.5742095412364456
+Memory used (in GB): 80.01900863647461
+Time elapsed (min):  75.37
+
+Epoch 40/1000
+Train Loss: 0.027679478749632835, Train Score: 0.715958075077053
+Validation Loss: 0.10805458575487137, Validation Score: 0.55604213007
+Memory used (in GB): 80.01813125610352
+Time elapsed (min):  85.96
+
+Epoch 45/1000
+Train Loss: 0.019254622980952263, Train Score: 0.7152002292284181
+Validation Loss: 0.10870614647865295, Validation Score: 0.5525196752605515
+Memory used (in GB): 80.02120590209961
+Time elapsed (min):  96.83
+
+Epoch 50/1000
+Train Loss: 0.02672327123582363, Train Score: 0.7133007822927893
+Validation Loss: 0.10918503999710083, Validation Score: 0.5540697379687545
+Memory used (in GB): 80.0180778503418
+Time elapsed (min):  107.33
+
+Epoch 55/1000
+Train Loss: 0.09079387038946152, Train Score: 0.7151310975309312
+Validation Loss: 0.10769915580749512, Validation Score: 0.5538225316145862
+Memory used (in GB): 80.0181999206543
+Time elapsed (min):  117.83
+Early stopping!
+Time elapsed (min):  121.99
+
+Train Loss: 0.02107256092131138
+Train Score: 0.716961008745304
+
+Validation Loss: 0.10655246675014496
+Validation Score: 0.577087469981722
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+test_BRD4_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 79.96069717407227
+test_BRD4_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 79.96500396728516
+test_BRD4_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 79.97607040405273
+test_BRD4_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 79.98115158081055
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py", line 463, in <module>
+    test_data_ids.to_csv('test_ids.csv', index=False)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    escapechar : str, default None
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1125, in to_csv
+    values = cast(DatetimeArray, values)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 24, in <module>
+    from pandas._typing import SequenceNotStr
+ImportError: cannot import name 'SequenceNotStr' from 'pandas._typing' (/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/_typing.py)

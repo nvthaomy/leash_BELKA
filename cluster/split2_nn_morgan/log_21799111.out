@@ -1,0 +1,310 @@
+==========================================
+SLURM_JOB_ID = 21799111
+SLURM_JOB_NODELIST = a12-01
+TMPDIR = /tmp/SLURM_21799111
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.027_size-15.0M
+Memory used (in GB): 0.4758720397949219
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 8.195865631103516
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk10.parquet
+Memory used (in GB): 15.843170166015625
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk11.parquet
+Memory used (in GB): 23.505340576171875
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk12.parquet
+Memory used (in GB): 31.171756744384766
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk13.parquet
+Memory used (in GB): 38.8072395324707
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk14.parquet
+Memory used (in GB): 46.445064544677734
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk15.parquet
+Memory used (in GB): 54.095115661621094
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 61.726593017578125
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 69.41671371459961
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 77.08574676513672
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk5.parquet
+Memory used (in GB): 84.75456237792969
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk6.parquet
+Memory used (in GB): 92.42424392700195
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk7.parquet
+Memory used (in GB): 100.0921859741211
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk8.parquet
+Memory used (in GB): 107.72431182861328
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk9.parquet
+Memory used (in GB): 115.35646438598633
+
+Train data length: 15000000
+Positive example rate in train:
+  BRD4:  0.030464133333333334
+  HSA:  0.0272272
+  sEH:  0.04830193333333333
+Memory used (in GB): 115.46730041503906
+
+X_train shape:  (15000000, 1024)
+y_train shape:  (15000000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.027_size-15.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_posrate-0.082_size-5.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-5.pth
+
+=== Fold 1/5 ===
+X_train_fold shape:  (12000000, 1024)
+y_train_fold shape:  (12000000, 3)
+X_val_fold shape:  (3000000, 1024)
+y_val_fold shape:  (3000000, 3)
+Memory used (in GB): 235.39446640014648
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.04314688593149185, Train Score: 0.7648820911578929
+Validation Loss: 0.05245039612054825, Validation Score: 0.7954958420876429
+Memory used (in GB): 236.25131225585938
+Time elapsed (min):  38.53
+
+Epoch 10/1000
+Train Loss: 0.04966817423701286, Train Score: 0.7647074819067518
+Validation Loss: 0.05244332179427147, Validation Score: 0.7964484538934166
+Memory used (in GB): 236.3098373413086
+Time elapsed (min):  73.71
+
+Epoch 15/1000
+Train Loss: 0.04887022823095322, Train Score: 0.7647173760088677
+Validation Loss: 0.05202893912792206, Validation Score: 0.7995031348999246
+Memory used (in GB): 236.31504821777344
+Time elapsed (min):  109.19
+Early stopping!
+Time elapsed (min):  123.39
+
+Train Loss: 0.0706745833158493
+Train Score: 0.7656271708507084
+
+Validation Loss: 0.051932744681835175
+Validation Score: 0.8004439036034461
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 236.0731658935547
+processed_data/test_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 236.08171463012695
+processed_data/test_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 236.10186386108398
+processed_data/test_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 236.11351776123047
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+is_BRD4    558859
+is_HSA     557895
+is_sEH     558142
+dtype: int64
+Memory used (in GB): 236.11077499389648
+
+=== Fold 2/5 ===
+Load model from previous fold
+Memory used (in GB): 236.39869689941406
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.052008938044309616, Train Score: 0.7683348136378655
+Validation Loss: 0.05189211294054985, Validation Score: 0.8013800472237396
+Memory used (in GB): 236.67323303222656
+Time elapsed (min):  36.19
+
+Epoch 10/1000
+Train Loss: 0.036258116364479065, Train Score: 0.7680772582748534
+Validation Loss: 0.05197542905807495, Validation Score: 0.8011081627164509
+Memory used (in GB): 236.6785774230957
+Time elapsed (min):  70.14
+Early stopping!
+Time elapsed (min):  76.94
+
+Train Loss: 0.03845032677054405
+Train Score: 0.8015983796130157
+
+Validation Loss: 0.051796216517686844
+Validation Score: 0.8017673087637837
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 236.40502548217773
+processed_data/test_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 236.4079475402832
+processed_data/test_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 236.41201400756836
+processed_data/test_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 236.41664505004883
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 236.41376113891602
+
+=== Fold 3/5 ===
+Load model from previous fold
+Memory used (in GB): 236.44514846801758
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.062283821403980255, Train Score: 0.7678426586195705
+Validation Loss: 0.05192800611257553, Validation Score: 0.8030781559325393
+Memory used (in GB): 236.71637344360352
+Time elapsed (min):  34.76
+
+Epoch 10/1000
+Train Loss: 0.05094045400619507, Train Score: 0.7676638701495143
+Validation Loss: 0.05184612423181534, Validation Score: 0.8031876740633871
+Memory used (in GB): 236.72085189819336
+Time elapsed (min):  70.01
+Early stopping!
+Time elapsed (min):  76.91
+
+Train Loss: 0.05313190072774887
+Train Score: 0.8011414400240857
+
+Validation Loss: 0.05170323699712753
+Validation Score: 0.8035855103287539
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 236.44610977172852
+processed_data/test_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 236.44706344604492
+processed_data/test_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 236.44792556762695
+processed_data/test_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 236.45058822631836
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 236.44766998291016
+
+=== Fold 4/5 ===
+Load model from previous fold
+Memory used (in GB): 236.44650650024414
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.058900125324726105, Train Score: 0.7684295108845799
+Validation Loss: 0.051730357110500336, Validation Score: 0.8009501337027968
+Memory used (in GB): 236.71896362304688
+Time elapsed (min):  37.08
+
+Epoch 10/1000
+Train Loss: 0.05157747119665146, Train Score: 0.7682090432724135
+Validation Loss: 0.051816340535879135, Validation Score: 0.8014181834508385
+Memory used (in GB): 236.72250366210938
+Time elapsed (min):  74.39
+
+Epoch 15/1000
+Train Loss: 0.04921923205256462, Train Score: 0.7685495628288901
+Validation Loss: 0.05174655839800835, Validation Score: 0.8007382738236394
+Memory used (in GB): 236.7309341430664
+Time elapsed (min):  109.21
+Early stopping!
+Time elapsed (min):  115.99
+
+Train Loss: 0.04626711457967758
+Train Score: 0.7682475854102858
+
+Validation Loss: 0.05164235457777977
+Validation Score: 0.8016557939007503
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 236.4530906677246
+processed_data/test_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 236.4537696838379
+processed_data/test_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 236.4540901184082
+processed_data/test_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 236.46210479736328
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 236.45922088623047
+
+=== Fold 5/5 ===
+Load model from previous fold
+Memory used (in GB): 236.45505905151367
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.06317424774169922, Train Score: 0.7685254801731553
+Validation Loss: 0.0517190583050251, Validation Score: 0.8013068022015397
+Memory used (in GB): 236.72884368896484
+Time elapsed (min):  33.44
+
+Epoch 10/1000
+Train Loss: 0.07856723666191101, Train Score: 0.7683629247269442
+Validation Loss: 0.05194423720240593, Validation Score: 0.8006732453764872
+Memory used (in GB): 236.73081588745117
+Time elapsed (min):  67.54
+Early stopping!
+Time elapsed (min):  74.27
+
+Train Loss: 0.03663398697972298
+Train Score: 0.8021775526384314
+
+Validation Loss: 0.05157067999243736
+Validation Score: 0.8015972943539517
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 236.45568466186523
+processed_data/test_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 236.45610427856445
+processed_data/test_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 236.4568748474121
+processed_data/test_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 236.45999908447266
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 236.45712280273438
+
+=== Fold 6/5 ===
+/var/spool/slurm/d/job21799111/slurm_script: line 46: 73594 Killed                  python -u nn_v3.5.py -gpu -split $split -model_name NN4 -load_model $model
+slurmstepd: error: Detected 1 oom_kill event in StepId=21799111.batch. Some of the step tasks have been OOM Killed.

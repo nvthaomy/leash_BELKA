@@ -1,0 +1,53 @@
+==========================================
+SLURM_JOB_ID = 21793006
+SLURM_JOB_NODELIST = a12-01
+TMPDIR = /tmp/SLURM_21793006
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.041_size-10.0M
+Memory used (in GB): 0.4746551513671875
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk1.parquet
+Memory used (in GB): 15.831832885742188
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk10.parquet
+Memory used (in GB): 31.169265747070312
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk2.parquet
+Memory used (in GB): 46.43560028076172
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk3.parquet
+Memory used (in GB): 61.707176208496094
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk4.parquet
+Memory used (in GB): 77.00603485107422
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk5.parquet
+Memory used (in GB): 92.24090194702148
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk6.parquet
+Memory used (in GB): 107.51292037963867
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk7.parquet
+Memory used (in GB): 122.80957794189453
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk8.parquet
+Memory used (in GB): 138.08126068115234
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk9.parquet
+Memory used (in GB): 153.3420181274414
+
+Train data length: 10000000
+Positive example rate in train:
+  BRD4:  0.0456962
+  HSA:  0.0408408
+  sEH:  0.05
+Memory used (in GB): 153.41576766967773
+
+X_train shape:  (10000000, 2048)
+y_train shape:  (10000000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.041_size-10.0M_NN5_00_1024bits_invar1024bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_posrate-0.082_size-5.0M_NN5_00_1024bits_invar1024bits_resampling-False_reweighting-False/model_best_fold-0.pth
+
+=== Fold 1/5 ===
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py", line 479, in <module>
+    X_train_t = torch.tensor(X_train_fold, dtype=torch.float32).to(device)
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] err == 0. DefaultCPUAllocator: can't allocate memory: you tried to allocate 65536000000 bytes. Error code 12 (Cannot allocate memory)

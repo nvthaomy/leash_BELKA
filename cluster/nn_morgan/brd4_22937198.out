@@ -1,0 +1,47 @@
+==========================================
+SLURM_JOB_ID = 22937198
+SLURM_JOB_NODELIST = b04-08
+TMPDIR = /tmp/SLURM_22937198
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+=== NN_BRD4_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (3000, 7)
+
+Train size:  2700
+Validation size:  300
+
+Train positive example rate:
+ 0.005555555555555556
+Validation positive example rate:
+ 0.0033333333333333335
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.02
+
+Calculating fingerprints for validation data
+Time elapsed (min):  0.01
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.36
+
+before removing None values
+X_train shape:  (2700, 1024)
+y_train shape:  (2700,)
+X_validation shape:  (300, 1024)
+y_validation shape:  (300,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (2700, 1024)
+y_train shape:  (2700,)
+X_validation shape:  (300, 1024)
+y_validation shape:  (300,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00037244 0.00037244]
+
+Training the model...
+slurmstepd: error: *** JOB 22937198 ON b04-08 CANCELLED AT 2024-04-22T14:32:34 ***

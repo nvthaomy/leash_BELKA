@@ -1,0 +1,6 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_5M/nn.py", line 64, in <module>
+    model_index = 10-cpu
+NameError: name 'cpu' is not defined

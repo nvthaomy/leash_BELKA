@@ -1,0 +1,1 @@
+icm /usr/icm-3.9-3b/_dockScan -s -a thorough=3. name=test_bu input=test_bu_input.sdf -S confs=1 brd4_5xi4 

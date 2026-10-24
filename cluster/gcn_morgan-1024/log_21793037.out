@@ -1,0 +1,107 @@
+==========================================
+SLURM_JOB_ID = 21793037
+SLURM_JOB_NODELIST = a12-04
+TMPDIR = /tmp/SLURM_21793037
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.050_size-0.005M
+Memory used (in GB): 0.4743690490722656
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.050_size-0.005M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 0.5781021118164062
+
+Train data length: 5000
+Positive example rate in train:
+  BRD4:  0.05
+  HSA:  0.05
+  sEH:  0.05
+Memory used (in GB): 0.5781440734863281
+
+X_train length:  5000
+y_train shape:  (5000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.050_size-0.005M_GCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+
+=== Fold 1/5 ===
+X_train_t length:  4000
+y_train_t shape:  torch.Size([4000, 3])
+X_val_t length:  1000
+y_val_t shape:  torch.Size([1000, 3])
+Memory used (in GB): 0.7383537292480469
+
+Training the model...
+
+Epoch 5/100
+Train Loss: 0.32114437222480774, Train Score: 0.05073718811318449
+Validation Loss: 0.29625964164733887, Validation Score: 0.05395054172304922
+Memory used (in GB): 0.9715080261230469
+Time elapsed (min):  0.06
+
+Epoch 10/100
+Train Loss: 0.261454313993454, Train Score: 0.05342481479237743
+Validation Loss: 0.21914184093475342, Validation Score: 0.05420850809610178
+Memory used (in GB): 0.9715080261230469
+Time elapsed (min):  0.08
+
+Epoch 15/100
+Train Loss: 0.19276393949985504, Train Score: 0.05186526400016176
+Validation Loss: 0.20039725303649902, Validation Score: 0.05486570202478786
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.1
+
+Epoch 20/100
+Train Loss: 0.21567942202091217, Train Score: 0.05184144370938007
+Validation Loss: 0.19700472056865692, Validation Score: 0.056896930961908745
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.11
+
+Epoch 25/100
+Train Loss: 0.22516825795173645, Train Score: 0.05302930707577342
+Validation Loss: 0.19650451838970184, Validation Score: 0.058262711091540735
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.13
+
+Epoch 30/100
+Train Loss: 0.2161138951778412, Train Score: 0.05573286284475987
+Validation Loss: 0.19644245505332947, Validation Score: 0.060260113806025827
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.15
+
+Epoch 35/100
+Train Loss: 0.17774605751037598, Train Score: 0.04948915493105495
+Validation Loss: 0.19641324877738953, Validation Score: 0.06122991092700095
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.17
+
+Epoch 40/100
+Train Loss: 0.13163818418979645, Train Score: 0.05361058521893985
+Validation Loss: 0.19643595814704895, Validation Score: 0.06174224125818795
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.18
+
+Epoch 45/100
+Train Loss: 0.23780913650989532, Train Score: 0.055941649380586995
+Validation Loss: 0.19652077555656433, Validation Score: 0.06240246911406734
+Memory used (in GB): 0.9717369079589844
+Time elapsed (min):  0.2
+Early stopping!
+Time elapsed (min):  0.21
+
+Train Loss: 0.14116275310516357
+Train Score: 0.04752260709810405
+
+Validation Loss: 0.19641265273094177
+Validation Score: 0.06110605987303194
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.707733154296875
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+slurmstepd: error: *** JOB 21793037 ON a12-04 CANCELLED AT 2024-05-17T17:11:12 ***

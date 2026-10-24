@@ -1,0 +1,30 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.049924444444444445
+Validation positive example rate:
+ 0.05068
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+Training the model...
+slurmstepd: error: *** JOB 22967877 ON a01-12 CANCELLED AT 2024-04-27T09:55:20 DUE TO TIME LIMIT ***

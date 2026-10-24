@@ -1,0 +1,129 @@
+==========================================
+SLURM_JOB_ID = 23210844
+SLURM_JOB_NODELIST = b11-14
+TMPDIR = /tmp/SLURM_23210844
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  sEH_5000000_posrate-0.05
+Memory used (in GB): 0.4316558837890625
+
+Loading processed train data from pickle/parquet files
+../nn_morgan-1024_5M/train_sEH_5000000_posrate-0.05_1024bits.parquet
+Memory used (in GB): 39.041603088378906
+
+Train data length: 5000000
+Positive example rate in train:
+  sEH:  0.05
+Memory used (in GB): 39.041603088378906
+
+X_train shape:  (5000000, 1024)
+y_train shape:  (5000000, 1)
+
+Loading test data
+Protein counts: 
+protein_name
+BRD4    558859
+sEH     558142
+HSA     557895
+Name: count, dtype: int64
+
+Calculating fingerprints for test data
+Processing chunk: 1/4
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 2/4
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 3/4
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 4/4
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Time elapsed (min):  3.01
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_sEH_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_sEH_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([4166666, 1024])
+y_train_t shape:  torch.Size([4166666, 1])
+X_val_t shape:  torch.Size([833334, 1024])
+y_val_t shape:  torch.Size([833334, 1])
+Memory used (in GB): 39.700050354003906
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.016614535823464394, Train Score: 0.8966168381533296
+Validation Loss: 0.04020799696445465, Validation Score: 0.9195287853118983
+Memory used (in GB): 40.114261627197266
+Time elapsed (min):  10.42
+
+Epoch 10/1000
+Train Loss: 0.01196657121181488, Train Score: 0.8966389990010881
+Validation Loss: 0.03988246992230415, Validation Score: 0.9186534873671408
+Memory used (in GB): 40.11366271972656
+Time elapsed (min):  20.76
+
+Epoch 15/1000
+Train Loss: 0.013970461674034595, Train Score: 0.8962358200480449
+Validation Loss: 0.03995971381664276, Validation Score: 0.9180893903646747
+Memory used (in GB): 40.11360549926758
+Time elapsed (min):  31.08
+
+Epoch 20/1000
+Train Loss: 0.00944183673709631, Train Score: 0.8967075637481441
+Validation Loss: 0.039833396673202515, Validation Score: 0.9180682776207236
+Memory used (in GB): 40.11338424682617
+Time elapsed (min):  41.34
+Early stopping!
+Time elapsed (min):  43.4
+
+Train Loss: 0.03499327227473259
+Train Score: 0.9256115648898936
+
+Validation Loss: 0.035885851830244064
+Validation Score: 0.9320599294493757
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py", line 445, in <module>
+    # evaluate on test data
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/tools.py", line 456, in forward
+    x = self.pool(self.relu(self.bn1(self.conv1(x)))) # n_in = 1024, n_out = 512
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 61.04 GiB. GPU 

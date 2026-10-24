@@ -1,0 +1,114 @@
+==========================================
+SLURM_JOB_ID = 23337144
+SLURM_JOB_NODELIST = b02-06
+TMPDIR = /tmp/SLURM_23337144
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  64
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.507232666015625
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 27.674976348876953
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 41.922203063964844
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 55.98723602294922
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 70.0979995727539
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk5.pkl
+Memory used (in GB): 84.06254196166992
+
+X_train_fp shape:  (5000000, 1024)
+X_train_graph length:  5000000
+y_train shape:  (5000000, 3)
+
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 84.11527633666992
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+Loaded model:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/5 ===
+X_train length:  4000000
+y_train shape:  (4000000, 3)
+X_val length:  1000000
+y_val shape:  (1000000, 3)
+Memory used (in GB): 122.81376266479492
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.11282677948474884, Train Score: 0.856580989289565
+Validation Loss: 0.09491639584302902, Validation Score: 0.8741800233733252
+Memory used (in GB): 123.07160949707031
+Time elapsed (min):  31.26
+
+Epoch 10/500
+Train Loss: 0.1099625676870346, Train Score: 0.8579782955820392
+Validation Loss: 0.09458589553833008, Validation Score: 0.8754412373074031
+Memory used (in GB): 123.07070922851562
+Time elapsed (min):  62.4
+
+Epoch 15/500
+Train Loss: 0.0971376895904541, Train Score: 0.8584428595288606
+Validation Loss: 0.09437805414199829, Validation Score: 0.874799172212338
+Memory used (in GB): 123.07493209838867
+Time elapsed (min):  93.84
+
+Epoch 20/500
+Train Loss: 0.12260842323303223, Train Score: 0.8583374130262267
+Validation Loss: 0.09462984651327133, Validation Score: 0.8753205135976304
+Memory used (in GB): 123.07232284545898
+Time elapsed (min):  126.6
+
+Epoch 25/500
+Train Loss: 0.1070900559425354, Train Score: 0.8585927012118849
+Validation Loss: 0.09461004287004471, Validation Score: 0.8754993548919793
+Memory used (in GB): 123.07136154174805
+Time elapsed (min):  157.84
+
+Epoch 30/500
+Train Loss: 0.10708265006542206, Train Score: 0.8585554990337794
+Validation Loss: 0.09440422803163528, Validation Score: 0.875025407155871
+Memory used (in GB): 123.0760612487793
+Time elapsed (min):  188.99
+
+Epoch 35/500
+Train Loss: 0.09659045934677124, Train Score: 0.8588479860162233
+Validation Loss: 0.09463529288768768, Validation Score: 0.875087950683276
+Memory used (in GB): 123.08003997802734
+Time elapsed (min):  220.76
+
+Epoch 40/500
+Train Loss: 0.10122527927160263, Train Score: 0.8587103527114335
+Validation Loss: 0.09431394934654236, Validation Score: 0.8761903639519952
+Memory used (in GB): 123.08014678955078
+Time elapsed (min):  253.25
+
+Epoch 45/500
+Train Loss: 0.09373144805431366, Train Score: 0.858678443576647
+Validation Loss: 0.09425685554742813, Validation Score: 0.8762607655569052
+Memory used (in GB): 123.08687210083008
+Time elapsed (min):  284.44
+Early stopping!
+Time elapsed (min):  290.67
+
+Train Loss: 0.10755500197410583
+Train Score: 0.858569901386738
+
+Validation Loss: 0.09399367868900299
+Validation Score: 0.8758054989046881
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl

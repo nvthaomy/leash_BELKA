@@ -1,0 +1,19 @@
+==========================================
+SLURM_JOB_ID = 21831619
+SLURM_JOB_NODELIST = a12-01
+TMPDIR = /tmp/SLURM_21831619
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.48133087158203125
+Memory used (in GB): 0.48133087158203125
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar1024bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+
+Prepare dataset
+slurmstepd: error: *** JOB 21831619 ON a12-01 CANCELLED AT 2024-05-22T13:53:55 ***

@@ -1,0 +1,16 @@
+# Large data and derived artifacts stay out of git (see MANIFEST_excluded.txt)
+*.parquet
+*.pkl
+*.sdf
+*.log
+*.inx
+*.ob
+*.map
+*.icm
+model_checkpoint*.pth
+checkpoint_epoch_*.pth
+__pycache__/
+*.pyc
+*.swp
+.DS_Store
+~$*

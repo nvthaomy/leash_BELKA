@@ -1,0 +1,102 @@
+==========================================
+SLURM_JOB_ID = 22957938
+SLURM_JOB_NODELIST = a04-09
+TMPDIR = /tmp/SLURM_22957938
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.0054, total number of train data = 200000
+Short train data shape for protein BRD4:  (200000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.43
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.96
+
+Train size:  180000
+Validation size:  20000
+
+Train positive example rate:
+ 0.005511111111111111
+Validation positive example rate:
+ 0.0044
+Overall positive example rate in train + validation:  0.0054
+
+before removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [5.58634251e-06 5.58634251e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.016594015061855316
+Time elapsed (min):  18.04
+Epoch 10/1000, Loss: 0.002233274979516864
+Time elapsed (min):  36.12
+Epoch 15/1000, Loss: 0.006906756665557623
+Time elapsed (min):  54.54
+Epoch 20/1000, Loss: 0.0028143522795289755
+Time elapsed (min):  72.94
+Epoch 25/1000, Loss: 0.008699063211679459
+Time elapsed (min):  91.31
+Epoch 30/1000, Loss: 0.02788606658577919
+Time elapsed (min):  109.42
+Epoch 35/1000, Loss: 0.004415974020957947
+Time elapsed (min):  127.62
+Epoch 40/1000, Loss: 0.01684587076306343
+Time elapsed (min):  145.68
+Epoch 45/1000, Loss: 0.0029451511800289154
+Time elapsed (min):  163.84
+Epoch 50/1000, Loss: 0.02104189619421959
+Time elapsed (min):  181.83
+Epoch 55/1000, Loss: 0.012734792195260525
+Time elapsed (min):  200.05
+Epoch 60/1000, Loss: 0.0033705311361700296
+Time elapsed (min):  218.24
+Epoch 65/1000, Loss: 0.0015601746272295713
+Time elapsed (min):  236.52
+Epoch 70/1000, Loss: 0.02214520052075386
+Time elapsed (min):  254.49
+Epoch 75/1000, Loss: 0.003414945211261511
+Time elapsed (min):  272.7
+Epoch 80/1000, Loss: 0.023484226316213608
+Time elapsed (min):  290.73
+Epoch 85/1000, Loss: 0.06345206499099731
+Time elapsed (min):  308.71
+Epoch 90/1000, Loss: 0.0070975953713059425
+Time elapsed (min):  326.66
+Early stopping!
+Time elapsed (min):  341.06
+Train Loss: 0.004148036707192659
+Validation Loss: 0.017409509047865868
+
+Train Score: 0.9999272712933905
+Validation Score: 0.3301735563019445
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_200k/nn.py", line 374, in <module>
+    plt.figure(figsize=(4, 4))
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

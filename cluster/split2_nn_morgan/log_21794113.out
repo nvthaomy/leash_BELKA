@@ -1,0 +1,16 @@
+==========================================
+SLURM_JOB_ID = 21794113
+SLURM_JOB_NODELIST = a12-01
+TMPDIR = /tmp/SLURM_21794113
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M_1024bits
+Memory used (in GB): 0.4737091064453125
+
+Loading processed train data from pickle/parquet files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py", line 299, in <module>
+    idx = np.random.permutation(X_train.shape[0])
+NameError: name 'X_train' is not defined

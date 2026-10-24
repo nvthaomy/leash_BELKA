@@ -1,0 +1,57 @@
+==========================================
+SLURM_JOB_ID = 22957880
+SLURM_JOB_NODELIST = b01-04
+TMPDIR = /tmp/SLURM_22957880
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.005406666666666666
+Validation positive example rate:
+ 0.00519
+Overall positive example rate in train + validation:  0.005385
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [1.11715118e-06 1.11715118e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.012509886175394058
+Time elapsed (min):  281.49
+Epoch 10/1000, Loss: 0.0025966668035835028
+Time elapsed (min):  563.79
+Epoch 15/1000, Loss: 0.012678741477429867
+Time elapsed (min):  845.76
+Epoch 20/1000, Loss: 0.005155947525054216
+Time elapsed (min):  1126.35
+Epoch 25/1000, Loss: 0.006626301445066929
+Time elapsed (min):  1409.34
+Epoch 30/1000, Loss: 0.0035542999394237995
+Time elapsed (min):  1690.17
+Epoch 35/1000, Loss: 0.04486308991909027
+Time elapsed (min):  1972.31
+Epoch 40/1000, Loss: 0.00813643354922533
+Time elapsed (min):  2254.48
+Epoch 45/1000, Loss: 0.003956180065870285
+Time elapsed (min):  2536.08
+Epoch 50/1000, Loss: 0.02610093355178833
+Time elapsed (min):  2815.88
+slurmstepd: error: *** JOB 22957880 ON b01-04 CANCELLED AT 2024-04-26T13:31:41 DUE TO TIME LIMIT ***

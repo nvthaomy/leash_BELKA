@@ -1,0 +1,59 @@
+==========================================
+SLURM_JOB_ID = 23394523
+SLURM_JOB_NODELIST = a01-15
+TMPDIR = /tmp/SLURM_23394523
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  64
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.49932098388671875
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk1.pkl
+Memory used (in GB): 42.92782211303711
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk2.pkl
+Memory used (in GB): 64.80413436889648
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk3.pkl
+Memory used (in GB): 86.49909973144531
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk4.pkl
+Memory used (in GB): 108.24161911010742
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk5.pkl
+Memory used (in GB): 129.83509063720703
+
+X_train_fp shape:  (5000000, 2048)
+X_train_graph length:  5000000
+y_train shape:  (5000000, 3)
+
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 129.8872299194336
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_FPGCN_00_1024bits_invar1024bits_resampling-False_reweighting-False
+FPGCN device: cuda:0
+
+=== Fold 1/5 ===
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py", line 545, in <module>
+    print('X_train shape: ', X_train[train_index].shape)
+TypeError: only integer scalar arrays can be converted to a scalar index
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py", line 548, in <module>
+    print('X_train length: ', len([X_train[i] for i in train_index]))
+  File "/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py", line 548, in <listcomp>
+    print('X_train length: ', len([X_train[i] for i in train_index]))
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py", line 550, in <module>
+    print('X_train length: ', len(X_train[0][train_index]))
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 61.0 GiB for an array with shape (4000000, 2048) and data type int64

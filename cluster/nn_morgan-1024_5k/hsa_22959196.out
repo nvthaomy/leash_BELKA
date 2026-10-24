@@ -1,0 +1,14 @@
+==========================================
+SLURM_JOB_ID = 22959196
+SLURM_JOB_NODELIST = a01-05
+TMPDIR = /tmp/SLURM_22959196
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_5k/nn.py", line 116, in <module>
+    del train_data_short
+NameError: name 'train_data_short' is not defined. Did you mean: 'train_data_temp'?

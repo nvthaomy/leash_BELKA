@@ -1,0 +1,53 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein sEH:  (98415610, 7)
+
+Generating shorter train data for protein sEH, positive rate = 0.05, total number of train data = 1000000
+Short train data shape for protein sEH:  (1000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  2.23
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.31
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.050026666666666664
+Validation positive example rate:
+ 0.04976
+Overall positive example rate in train + validation:  0.05
+
+class weights:  [1.16962347e-06 2.22103767e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.06024250388145447
+Time elapsed (min):  115.36
+Epoch 10/1000, Loss: 0.017557432875037193
+Time elapsed (min):  230.79
+Epoch 15/1000, Loss: 0.030919086188077927
+Time elapsed (min):  345.77
+Epoch 20/1000, Loss: 0.03418069705367088
+Time elapsed (min):  461.52
+Epoch 25/1000, Loss: 0.03142804652452469
+Time elapsed (min):  576.34
+Epoch 30/1000, Loss: 0.012279868125915527
+Time elapsed (min):  690.81
+Epoch 35/1000, Loss: 0.030890624970197678
+Time elapsed (min):  805.55
+Epoch 40/1000, Loss: 0.010729523375630379
+Time elapsed (min):  919.91
+Early stopping!
+Time elapsed (min):  965.29
+Train Loss: 0.03029785491526127
+Validation Loss: 0.03566789999604225
+
+Train Score: 0.9546263593403268
+Validation Score: 0.9318043325674853
+
+
+Making predictions on test data...

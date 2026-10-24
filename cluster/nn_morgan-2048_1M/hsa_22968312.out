@@ -1,0 +1,59 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+
+Generating shorter train data for protein HSA, positive rate = 0.05, total number of train data = 1000000
+Short train data shape for protein HSA:  (1000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  2.48
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.4
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.049854444444444444
+Validation positive example rate:
+ 0.05131
+Overall positive example rate in train + validation:  0.05
+
+class weights:  [1.16941147e-06 2.22871025e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.06458062678575516
+Time elapsed (min):  117.72
+Epoch 10/1000, Loss: 0.0704583153128624
+Time elapsed (min):  233.92
+Epoch 15/1000, Loss: 0.0682433471083641
+Time elapsed (min):  350.35
+Epoch 20/1000, Loss: 0.1407034546136856
+Time elapsed (min):  466.38
+Epoch 25/1000, Loss: 0.13548000156879425
+Time elapsed (min):  586.69
+Epoch 30/1000, Loss: 0.05988001823425293
+Time elapsed (min):  702.38
+Epoch 35/1000, Loss: 0.07127965241670609
+Time elapsed (min):  818.57
+Epoch 40/1000, Loss: 0.12689335644245148
+Time elapsed (min):  935.99
+Epoch 45/1000, Loss: 0.06966729462146759
+Time elapsed (min):  1051.56
+Epoch 50/1000, Loss: 0.053609661757946014
+Time elapsed (min):  1167.52
+Epoch 55/1000, Loss: 0.08496031910181046
+Time elapsed (min):  1285.63
+Early stopping!
+Time elapsed (min):  1288.15
+Train Loss: 0.08496031910181046
+Validation Loss: 0.09166333079338074
+
+Train Score: 0.7439797632260478
+Validation Score: 0.708304122107007
+
+
+Making predictions on test data...

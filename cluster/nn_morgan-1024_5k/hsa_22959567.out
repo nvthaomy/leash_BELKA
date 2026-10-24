@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 22959567
+SLURM_JOB_NODELIST = a02-17
+TMPDIR = /tmp/SLURM_22959567
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+
+Generating shorter train data for protein HSA, positive rate = 0.1, total number of train data = 5000
+Short train data shape for protein HSA:  (5000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.03
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.96
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.09822222222222222
+Validation positive example rate:
+ 0.116
+Overall positive example rate in train + validation:  0.1
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+class weights:  [0.00024643 0.00226244]
+
+Training the model...
+Epoch 5/1000, Loss: 0.34090879559516907
+Time elapsed (min):  0.25
+Epoch 10/1000, Loss: 0.24106469750404358
+Time elapsed (min):  0.52
+Epoch 15/1000, Loss: 0.19632844626903534
+Time elapsed (min):  0.77
+Epoch 20/1000, Loss: 0.13085655868053436
+Time elapsed (min):  1.02
+Epoch 25/1000, Loss: 0.08397285640239716
+Time elapsed (min):  1.27
+Epoch 30/1000, Loss: 0.030753184109926224
+Time elapsed (min):  1.52
+Epoch 35/1000, Loss: 0.028694218024611473
+Time elapsed (min):  1.76
+Early stopping!
+Time elapsed (min):  1.96
+Train Loss: 0.015578239224851131
+Validation Loss: 0.34130987524986267
+
+Train Score: 0.9964696230228502
+Validation Score: 0.5986349937383162
+
+
+Making predictions on test data...

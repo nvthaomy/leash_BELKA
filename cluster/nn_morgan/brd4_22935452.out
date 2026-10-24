@@ -1,0 +1,6 @@
+=== NN_BRD4_resampling-True_reweighting-False ===
+Number of CPU nodes (cores) available: 64
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan/nn.py", line 56, in <module>
+    cpu_affinity = pid.cpu_affinity()
+AttributeError: 'int' object has no attribute 'cpu_affinity'

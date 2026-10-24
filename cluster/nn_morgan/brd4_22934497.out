@@ -1,0 +1,36 @@
+=== NN_BRD4_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004642183626493128
+Validation positive example rate:
+ 0.004652412356129277
+
+Calculating fingerprints for train data
+Batch 100/88575
+Memory used (in GB): 18.612770080566406
+Batch 200/88575
+Memory used (in GB): 19.393138885498047
+Batch 300/88575
+Memory used (in GB): 20.173511505126953
+Batch 400/88575
+Memory used (in GB): 20.953895568847656
+Batch 500/88575
+Memory used (in GB): 21.734249114990234
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan/nn.py", line 121, in <module>
+    train_data['molecule_fp'] = fingerprints
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/frame.py", line 4091, in __setitem__
+    self._set_item(key, value)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/frame.py", line 4300, in _set_item
+    value, refs = self._sanitize_column(value)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/frame.py", line 5039, in _sanitize_column
+    com.require_length_match(value, self.index)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/common.py", line 561, in require_length_match
+    raise ValueError(
+ValueError: Length of values (500000) does not match length of index (88574049)

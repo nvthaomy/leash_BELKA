@@ -1,0 +1,162 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  HSA_5000000_posrate-0.05
+Memory used (in GB): 0.4296684265136719
+
+Loading processed train data from pickle/parquet files
+../nn_morgan-1024_5M/train_HSA_5000000_posrate-0.05_1024bits.parquet
+Memory used (in GB): 38.90174865722656
+
+Train data length: 5000000
+Positive example rate in train:
+  HSA:  0.05
+Memory used (in GB): 38.90174865722656
+
+X_train shape:  (5000000, 1024)
+y_train shape:  (5000000, 1)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_HSA_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([4166666, 1024])
+y_train_t shape:  torch.Size([4166666, 1])
+X_val_t shape:  torch.Size([833334, 1024])
+y_val_t shape:  torch.Size([833334, 1])
+Memory used (in GB): 39.35871887207031
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.035115230828523636, Train Score: 0.6298434814284053
+Validation Loss: 0.09765567630529404, Validation Score: 0.6680317951540737
+Memory used (in GB): 39.858402252197266
+Time elapsed (min):  10.61
+
+Epoch 10/1000
+Train Loss: 0.031549252569675446, Train Score: 0.6331136903730216
+Validation Loss: 0.0964156836271286, Validation Score: 0.6715369357376617
+Memory used (in GB): 39.85844421386719
+Time elapsed (min):  21.18
+
+Epoch 15/1000
+Train Loss: 0.029543912038207054, Train Score: 0.634265915085933
+Validation Loss: 0.09655637294054031, Validation Score: 0.6709100856213427
+Memory used (in GB): 39.85856246948242
+Time elapsed (min):  31.65
+
+Epoch 20/1000
+Train Loss: 0.028353950008749962, Train Score: 0.6337809959091425
+Validation Loss: 0.09694927930831909, Validation Score: 0.6696624808486724
+Memory used (in GB): 39.858543395996094
+Time elapsed (min):  42.13
+
+Epoch 25/1000
+Train Loss: 0.04644091799855232, Train Score: 0.6357068953870807
+Validation Loss: 0.09683313220739365, Validation Score: 0.6691226014584368
+Memory used (in GB): 39.8583984375
+Time elapsed (min):  52.61
+
+Epoch 30/1000
+Train Loss: 0.023840606212615967, Train Score: 0.6358175999545645
+Validation Loss: 0.09655416756868362, Validation Score: 0.6716373683474647
+Memory used (in GB): 39.85853958129883
+Time elapsed (min):  63.1
+
+Epoch 35/1000
+Train Loss: 0.02888628840446472, Train Score: 0.635519181772866
+Validation Loss: 0.09627652168273926, Validation Score: 0.6737016471052546
+Memory used (in GB): 39.85859298706055
+Time elapsed (min):  73.57
+
+Epoch 40/1000
+Train Loss: 0.022808676585555077, Train Score: 0.6374234658237784
+Validation Loss: 0.09612180292606354, Validation Score: 0.6753834631170684
+Memory used (in GB): 39.858436584472656
+Time elapsed (min):  84.04
+
+Epoch 45/1000
+Train Loss: 0.02824300341308117, Train Score: 0.6358112265876785
+Validation Loss: 0.09663312882184982, Validation Score: 0.6710157695218892
+Memory used (in GB): 39.858402252197266
+Time elapsed (min):  94.51
+
+Epoch 50/1000
+Train Loss: 0.03510582819581032, Train Score: 0.6366312233353217
+Validation Loss: 0.09683109074831009, Validation Score: 0.6737333619062911
+Memory used (in GB): 39.858402252197266
+Time elapsed (min):  104.97
+
+Epoch 55/1000
+Train Loss: 0.036039989441633224, Train Score: 0.6366110396450629
+Validation Loss: 0.09645215421915054, Validation Score: 0.673826256426362
+Memory used (in GB): 39.8583984375
+Time elapsed (min):  115.43
+
+Epoch 60/1000
+Train Loss: 0.020884105935692787, Train Score: 0.6360404128466018
+Validation Loss: 0.09596305340528488, Validation Score: 0.6757266846974199
+Memory used (in GB): 39.85845947265625
+Time elapsed (min):  125.89
+
+Epoch 65/1000
+Train Loss: 0.05639119818806648, Train Score: 0.6364996636404159
+Validation Loss: 0.09593071788549423, Validation Score: 0.6761194994495296
+Memory used (in GB): 39.858436584472656
+Time elapsed (min):  136.4
+
+Epoch 70/1000
+Train Loss: 0.031951915472745895, Train Score: 0.6374265756708903
+Validation Loss: 0.09625277668237686, Validation Score: 0.6749020792953893
+Memory used (in GB): 39.85844039916992
+Time elapsed (min):  146.85
+
+Epoch 75/1000
+Train Loss: 0.01661861501634121, Train Score: 0.6370042374226651
+Validation Loss: 0.09596158564090729, Validation Score: 0.6740957717659295
+Memory used (in GB): 39.85844039916992
+Time elapsed (min):  157.3
+
+Epoch 80/1000
+Train Loss: 0.028385182842612267, Train Score: 0.637457803318932
+Validation Loss: 0.09622491896152496, Validation Score: 0.6731268564203015
+Memory used (in GB): 39.85844039916992
+Time elapsed (min):  167.78
+
+Epoch 85/1000
+Train Loss: 0.03262149915099144, Train Score: 0.6370330911797032
+Validation Loss: 0.09619366377592087, Validation Score: 0.6727897381668134
+Memory used (in GB): 39.858516693115234
+Time elapsed (min):  178.23
+Early stopping!
+Time elapsed (min):  178.26
+
+Train Loss: 0.05639119818806648
+Train Score: 0.6364996636404159
+
+Validation Loss: 0.09593071788549423
+Validation Score: 0.6761194994495296
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py", line 442, in <module>
+    tmp = model(X_test_t)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/tools.py", line 456, in forward
+    x = self.pool(self.relu(self.bn1(self.conv1(x)))) # n_in = 1024, n_out = 512
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 68.36 GiB. GPU 

@@ -1,0 +1,49 @@
+==========================================
+SLURM_JOB_ID = 23041157
+SLURM_JOB_NODELIST = b22-04
+TMPDIR = /tmp/SLURM_23041157
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Memory used (in GB): 0.42067718505859375
+
+Loading processed train data from pickle/parquet files
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk1.parquet
+Memory used (in GB): 46.393775939941406
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk2.parquet
+Memory used (in GB): 69.48839569091797
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk3.parquet
+Memory used (in GB): 92.41569900512695
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk4.parquet
+Memory used (in GB): 115.31965637207031
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk5.parquet
+Memory used (in GB): 124.84544372558594
+
+Train data length: 14122319
+Positive example rate in train:  0.0059936331986269395
+Memory used (in GB): 108.64717102050781
+
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 112.3723030090332
+Memory used (in GB): 114.73216247558594
+Memory used (in GB): 116.19837951660156
+          id
+0  295246830
+1  295246833
+2  295246836
+3  295246839
+4  295246842
+Memory used (in GB): 112.94631958007812
+
+X_train shape:  (14122319, 1024)
+y_train shape:  (14122319, 1)
+X_test shape:  (558859, 1024)
+Device:  cpu
+Checkpoint directory:  checkpoints_NN5_BRD4_10_1024bits_resampling-False_reweighting-False
+
+Loaded model:  ../nn_morgan-1024_10M/checkpoints_NN5_BRD4_10_trainsize-10000000_posrate-0.0457_resampling-False_reweighting-False/model.pth
+Memory used (in GB): 57.04710006713867
+
+Training the model...
+slurmstepd: error: *** JOB 23041157 ON b22-04 CANCELLED AT 2024-05-01T21:53:02 ***

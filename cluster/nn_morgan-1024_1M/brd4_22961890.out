@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 22961890
+SLURM_JOB_NODELIST = a03-19
+TMPDIR = /tmp/SLURM_22961890
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.05, total number of train data = 1000000
+Short train data shape for protein BRD4:  (1000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  1.98
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.05
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.049965555555555555
+Validation positive example rate:
+ 0.05031
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [1.16954824e-06 2.22375414e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.07104726135730743
+Time elapsed (min):  45.63
+Epoch 10/1000, Loss: 0.04439554736018181
+Time elapsed (min):  92.75
+Epoch 15/1000, Loss: 0.0766875296831131
+Time elapsed (min):  139.61
+Epoch 20/1000, Loss: 0.055928684771060944
+Time elapsed (min):  185.79
+Epoch 25/1000, Loss: 0.0486077256500721
+Time elapsed (min):  231.78
+Epoch 30/1000, Loss: 0.059484243392944336
+Time elapsed (min):  277.45
+Epoch 35/1000, Loss: 0.04737794026732445
+Time elapsed (min):  323.51
+Early stopping!
+Time elapsed (min):  323.56
+Train Loss: 0.04737794026732445
+Validation Loss: 0.0632079616189003
+
+Train Score: 0.8686354395574795
+Validation Score: 0.8325960727767349
+
+
+Making predictions on test data...

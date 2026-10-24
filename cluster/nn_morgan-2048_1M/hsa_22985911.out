@@ -1,0 +1,27 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Memory used (in GB): 0.4254341125488281
+Is CUDA available:  True
+Loading processed data from pickle files
+Memory used (in GB): 32.42079544067383
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.050001111111111114
+Validation positive example rate:
+ 0.04999
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 24.73196029663086
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (900000,)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 2048)
+y_validation shape:  (100000,)
+X_test shape:  (557895, 2048)
+
+class weights:  [1.16959201e-06 2.22217284e-05]
+
+Training the model...
+slurmstepd: error: *** JOB 22985911 ON a04-15 CANCELLED AT 2024-04-27T10:15:37 ***

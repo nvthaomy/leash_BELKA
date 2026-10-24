@@ -1,0 +1,54 @@
+==========================================
+SLURM_JOB_ID = 22973509
+SLURM_JOB_NODELIST = d06-15
+TMPDIR = /tmp/SLURM_22973509
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.050444444444444445
+Validation positive example rate:
+ 0.046
+Overall positive example rate in train + validation:  0.05
+
+X_train shape:  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023403 0.00440529]
+
+Training the model...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn_v2.py", line 323, in <module>
+    train_score = average_precision_score(targets.numpy(), outputs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 268, in average_precision_score
+    return _average_binary_score(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_base.py", line 75, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 230, in _binary_uninterpolated_average_precision
+    precision, recall, _ = precision_recall_curve(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 965, in precision_recall_curve
+    fps, tps, thresholds = _binary_clf_curve(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py", line 821, in _binary_clf_curve
+    y_score = column_or_1d(y_score)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1342, in column_or_1d
+    y = check_array(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/validation.py", line 997, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/utils/_array_api.py", line 521, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/_tensor.py", line 1087, in __array__
+    return self.numpy()
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.

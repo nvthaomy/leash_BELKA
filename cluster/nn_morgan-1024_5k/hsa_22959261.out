@@ -1,0 +1,53 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.202
+Validation positive example rate:
+ 0.182
+Overall positive example rate in train + validation:  0.2
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+class weights:  [0.00027847 0.00027847]
+
+Training the model...
+Epoch 5/1000, Loss: 0.11497242748737335
+Time elapsed (min):  0.44
+Epoch 10/1000, Loss: 0.07224162667989731
+Time elapsed (min):  0.84
+Epoch 15/1000, Loss: 0.09179412573575974
+Time elapsed (min):  1.24
+Epoch 20/1000, Loss: 0.0812808945775032
+Time elapsed (min):  1.63
+Epoch 25/1000, Loss: 0.18676148355007172
+Time elapsed (min):  2.02
+Epoch 30/1000, Loss: 0.1697840541601181
+Time elapsed (min):  2.41
+Early stopping!
+Time elapsed (min):  2.41
+Train Loss: 0.1697840541601181
+Validation Loss: 0.32021042704582214
+
+Train Score: 0.9993473481660291
+Validation Score: 0.7752032681276905
+
+
+Making predictions on test data...

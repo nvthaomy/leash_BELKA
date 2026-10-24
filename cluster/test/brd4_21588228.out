@@ -1,0 +1,17 @@
+==========================================
+SLURM_JOB_ID = 21588228
+SLURM_JOB_NODELIST = a12-08
+TMPDIR = /tmp/SLURM_21588228
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Is CUDA available:  True
+Loading processed data from pickle files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn_v2.py", line 170, in <module>
+    train_data_temp = pd.read_pickle(train_processed)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/io/pickle.py", line 189, in read_pickle
+    with get_handle(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/io/common.py", line 872, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '../nn_morgain-1024_5k/train_BRD4_5000_posrate-0.05_1024bits.pkl'

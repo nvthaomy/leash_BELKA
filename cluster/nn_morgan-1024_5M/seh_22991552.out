@@ -1,0 +1,35 @@
+==========================================
+SLURM_JOB_ID = 22991552
+SLURM_JOB_NODELIST = a03-07
+TMPDIR = /tmp/SLURM_22991552
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.4263343811035156
+Is CUDA available:  False
+Loading processed data from pickle files
+Memory used (in GB): 0.6901893615722656
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.05002288888888889
+Validation positive example rate:
+ 0.049794
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 13.257225036621094
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500000,)
+y_train shape:  (4500000,)
+X_validation shape:  (500000, 1024)
+y_validation shape:  (500000,)
+X_test shape:  (558142, 1024)
+
+class weights:  [2.33923765e-07 4.44241081e-06]
+Memory used (in GB): 15.41842269897461
+
+Training the model...
+Model loaded from checkpoint:  ../nn_morgan-1024_1M/checkpoints_NN5_sEH_10_trainsize-1000000_posrate-0.05_resampling-False_reweighting-False/checkpoint_epoch_35.pth
+Resuming training from epoch:  35
+slurmstepd: error: *** JOB 22991552 ON a03-07 CANCELLED AT 2024-04-28T16:47:29 ***

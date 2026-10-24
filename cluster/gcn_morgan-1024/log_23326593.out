@@ -1,0 +1,120 @@
+==========================================
+SLURM_JOB_ID = 23326593
+SLURM_JOB_NODELIST = b22-06
+TMPDIR = /tmp/SLURM_23326593
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+
+Loading train data from ../data/split2/train_folds.parquet
+Time elapsed (min):  0.75
+Columns:  Index(['buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'binds_BRD4', 'binds_HSA',
+       'binds_sEH', 'bb_test_noshare', 'bb_test_mixshare', 'random_test',
+       'full_test', 'posrate-0.050_size-0.005M', 'posrate-0.027_size-15.0M',
+       'posrate-0.041_size-10.0M', 'posrate-0.020_size-20.0M',
+       'posrate-0.082_size-5.0M', 'posrate-0.050_size-5.0M',
+       'posrate-0.010_size-5.0M',
+       'indp_posrate-0.010_size-each-5.0M_size-total-14.251M',
+       'indp_posrate-0.050_size-each-5.0M_size-total-14.240M',
+       'indp_posrate-0.050_size-each-2.0M_size-total-5.876M',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M', 'BRD4_posrate-0.030_size-15.0M',
+       'HSA_posrate-0.027_size-15.0M', 'sEH_posrate-0.048_size-15.0M',
+       'BRD4_posrate-0.046_size-10.0M', 'HSA_posrate-0.041_size-10.0M',
+       'sEH_posrate-0.050_size-10.0M'],
+      dtype='object')
+
+Split name:  posrate-0.082_size-5.0M
+
+Statistics in train_data[posrate-0.082_size-5.0M == True]:
+Total count: 5000000
+Positive rates:
+binds_BRD4    0.091393
+binds_HSA     0.081682
+binds_sEH     0.100000
+dtype: float64
+
+Calculating fingerprints for train data
+Processing chunk: 1/5
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:237: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_graph'] = train_graphs
+Processing chunk: 2/5
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:237: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_graph'] = train_graphs
+Processing chunk: 3/5
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:237: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_graph'] = train_graphs
+Processing chunk: 4/5
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:237: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_graph'] = train_graphs
+Processing chunk: 5/5
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:232: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py:237: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_graph'] = train_graphs
+Time elapsed (min):  63.64
+Memory used (in GB): 30.17235565185547
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk1.pkl
+Memory used (in GB): 67.47921371459961
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk2.pkl
+Memory used (in GB): 89.06710815429688
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk3.pkl
+Memory used (in GB): 110.64251708984375
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk4.pkl
+Memory used (in GB): 132.21809005737305
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar1024bits_chunk5.pkl
+/var/spool/slurm/d/job23326593/slurm_script: line 45: 77783 Killed                  python -u nn_v3.5.py -split_name $split -gpu -train_path $path -model_name FPGCN -skip_train -process_train -process_test -fp_invar_size 1024
+slurmstepd: error: Detected 1 oom_kill event in StepId=23326593.batch. Some of the step tasks have been OOM Killed.

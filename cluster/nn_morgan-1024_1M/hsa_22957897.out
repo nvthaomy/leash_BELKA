@@ -1,0 +1,82 @@
+==========================================
+SLURM_JOB_ID = 22957897
+SLURM_JOB_NODELIST = b04-16
+TMPDIR = /tmp/SLURM_22957897
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.005393333333333333
+Validation positive example rate:
+ 0.00531
+Overall positive example rate in train + validation:  0.005385
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (557895, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (557895, 1024)
+
+class weights:  [1.1171362e-06 1.1171362e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.12309645116329193
+Time elapsed (min):  91.47
+Epoch 10/1000, Loss: 0.0021958164870738983
+Time elapsed (min):  182.44
+Epoch 15/1000, Loss: 0.012427622452378273
+Time elapsed (min):  273.1
+Epoch 20/1000, Loss: 0.007395959459245205
+Time elapsed (min):  364.5
+Epoch 25/1000, Loss: 0.003288747277110815
+Time elapsed (min):  455.49
+Epoch 30/1000, Loss: 0.003989650867879391
+Time elapsed (min):  546.4
+Epoch 35/1000, Loss: 0.05025115981698036
+Time elapsed (min):  637.46
+Epoch 40/1000, Loss: 0.0028485003858804703
+Time elapsed (min):  728.39
+Epoch 45/1000, Loss: 0.010624894872307777
+Time elapsed (min):  819.03
+Epoch 50/1000, Loss: 0.01669849269092083
+Time elapsed (min):  910.1
+Epoch 55/1000, Loss: 0.008868906646966934
+Time elapsed (min):  1001.61
+Epoch 60/1000, Loss: 0.005618829745799303
+Time elapsed (min):  1092.31
+Epoch 65/1000, Loss: 0.052984852343797684
+Time elapsed (min):  1183.13
+Early stopping!
+Time elapsed (min):  1219.78
+Train Loss: 0.00318605313077569
+Validation Loss: 0.024461235851049423
+
+Train Score: 0.9997025354420747
+Validation Score: 0.14311140201508518
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_1M/nn.py", line 374, in <module>
+    plt.figure(figsize=(4, 4))
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

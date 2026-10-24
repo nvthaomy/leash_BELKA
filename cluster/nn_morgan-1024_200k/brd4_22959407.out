@@ -1,0 +1,75 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  180000
+Validation size:  20000
+
+Train positive example rate:
+ 0.005383333333333334
+Validation positive example rate:
+ 0.00555
+Overall positive example rate in train + validation:  0.0054
+
+before removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [5.58562484e-06 1.03199174e-03]
+
+Training the model...
+Epoch 5/1000, Loss: 0.0020550338085740805
+Time elapsed (min):  9.41
+Epoch 10/1000, Loss: 0.10632143914699554
+Time elapsed (min):  18.57
+Epoch 15/1000, Loss: 0.0018419676925987005
+Time elapsed (min):  27.75
+Epoch 20/1000, Loss: 0.15547531843185425
+Time elapsed (min):  36.85
+Epoch 25/1000, Loss: 0.0033632901031523943
+Time elapsed (min):  45.96
+Epoch 30/1000, Loss: 0.006066036410629749
+Time elapsed (min):  55.06
+Epoch 35/1000, Loss: 0.0016732761869207025
+Time elapsed (min):  64.16
+Epoch 40/1000, Loss: 0.0038115265779197216
+Time elapsed (min):  73.21
+Epoch 45/1000, Loss: 0.023127684369683266
+Time elapsed (min):  82.27
+Epoch 50/1000, Loss: 0.010538090951740742
+Time elapsed (min):  91.25
+Epoch 55/1000, Loss: 0.0014436133205890656
+Time elapsed (min):  100.19
+Epoch 60/1000, Loss: 0.023248478770256042
+Time elapsed (min):  109.21
+Epoch 65/1000, Loss: 0.004534822888672352
+Time elapsed (min):  118.15
+Epoch 70/1000, Loss: 0.0030072862282395363
+Time elapsed (min):  127.12
+Epoch 75/1000, Loss: 0.005106926895678043
+Time elapsed (min):  136.08
+Epoch 80/1000, Loss: 0.0017273409757763147
+Time elapsed (min):  145.03
+Epoch 85/1000, Loss: 0.002035538898780942
+Time elapsed (min):  153.98
+Early stopping!
+Time elapsed (min):  155.78
+Train Loss: 0.0006081677274778485
+Validation Loss: 0.01959318481385708
+
+Train Score: 0.56441169665007
+Validation Score: 0.36810917828550666
+
+
+Making predictions on test data...

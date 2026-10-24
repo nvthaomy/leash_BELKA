@@ -1,0 +1,38 @@
+==========================================
+SLURM_JOB_ID = 22968086
+SLURM_JOB_NODELIST = a02-07
+TMPDIR = /tmp/SLURM_22968086
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein sEH:  (98415610, 7)
+
+Generating shorter train data for protein sEH, positive rate = 0.05, total number of train data = 5000000
+Short train data shape for protein sEH:  (5000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  8.78
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.01
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.04997488888888889
+Validation positive example rate:
+ 0.050226
+Overall positive example rate in train + validation:  0.05
+
+class weights:  [2.33911946e-07 4.44667766e-06]
+
+Training the model...
+Epoch 5/1000, Loss: 0.10123363137245178
+Time elapsed (min):  226.57
+Epoch 10/1000, Loss: 0.000932060182094574
+Time elapsed (min):  450.68
+Epoch 15/1000, Loss: 0.041716255247592926
+Time elapsed (min):  674.8

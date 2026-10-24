@@ -1,0 +1,13 @@
+id
+buildingblock1_smiles
+buildingblock2_smiles
+buildingblock3_smiles
+molecule_smiles
+protein_name
+binds
+BRD4_posrate-0.050_size-5.0M
+HSA_posrate-0.050_size-5.0M
+sEH_posrate-0.050_size-5.0M
+BRD4_posrate-0.046_size-10.0M
+HSA_posrate-0.041_size-10.0M
+sEH_posrate-0.050_size-10.0M

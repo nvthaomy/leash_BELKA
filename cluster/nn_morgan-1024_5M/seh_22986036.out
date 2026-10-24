@@ -1,0 +1,19 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.049974
+Validation positive example rate:
+ 0.050234
+Overall positive example rate in train + validation:  0.05
+
+Resuming training from checkpoint:  checkpoints_NN_sEH_10_trainsize-5000000_posrate-0.05_resampling-False_reweighting-False/checkpoint_epoch_10.pth
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_5M/nn.py", line 285, in <module>
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
+AttributeError: 'dict' object has no attribute 'parameters'

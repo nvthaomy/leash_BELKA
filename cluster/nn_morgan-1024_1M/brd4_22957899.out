@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 22957899
+SLURM_JOB_NODELIST = b04-18
+TMPDIR = /tmp/SLURM_22957899
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.00538
+Validation positive example rate:
+ 0.00543
+Overall positive example rate in train + validation:  0.005385
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [1.11712122e-06 2.06526229e-04]
+
+Training the model...
+Epoch 5/1000, Loss: 0.003335990710183978
+Time elapsed (min):  46.24
+Epoch 10/1000, Loss: 0.014959718100726604
+Time elapsed (min):  92.19
+Epoch 15/1000, Loss: 0.006872589699923992
+Time elapsed (min):  137.66
+Epoch 20/1000, Loss: 0.006478837225586176
+Time elapsed (min):  183.01
+Epoch 25/1000, Loss: 0.004099986981600523
+Time elapsed (min):  228.45
+Epoch 30/1000, Loss: 0.033443205058574677
+Time elapsed (min):  274.28
+Epoch 35/1000, Loss: 0.03826764225959778
+Time elapsed (min):  320.41
+Epoch 40/1000, Loss: 0.020602749660611153
+Time elapsed (min):  366.18
+Epoch 45/1000, Loss: 0.02507782354950905
+Time elapsed (min):  411.78
+Epoch 50/1000, Loss: 0.050001561641693115
+Time elapsed (min):  457.55
+Epoch 55/1000, Loss: 0.010648712515830994
+Time elapsed (min):  503.47
+Epoch 60/1000, Loss: 0.00963992066681385
+Time elapsed (min):  549.3
+Early stopping!
+Time elapsed (min):  576.85
+Train Loss: 0.002161396900191903
+Validation Loss: 0.018923256546258926
+
+Train Score: 0.33876333980367357
+Validation Score: 0.33811270732924364
+
+
+Making predictions on test data...

@@ -1,0 +1,175 @@
+==========================================
+SLURM_JOB_ID = 22975519
+SLURM_JOB_NODELIST = d06-21
+TMPDIR = /tmp/SLURM_22975519
+==========================================
+=== BRD4 ===
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.050222222222222224
+Validation positive example rate:
+ 0.048
+Overall positive example rate in train + validation:  0.05
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023397 0.00442478]
+
+Training the model...
+Epoch 5/1000, Loss: 0.44723382592201233
+Time elapsed (min):  0.63
+Epoch 10/1000, Loss: 0.22906890511512756
+Time elapsed (min):  1.25
+Epoch 15/1000, Loss: 0.1675376147031784
+Time elapsed (min):  1.87
+Epoch 20/1000, Loss: 0.09837057441473007
+Time elapsed (min):  2.51
+Epoch 25/1000, Loss: 0.06747641414403915
+Time elapsed (min):  3.19
+Epoch 30/1000, Loss: 0.05919580161571503
+Time elapsed (min):  3.82
+Epoch 35/1000, Loss: 0.045826420187950134
+Time elapsed (min):  4.47
+Epoch 40/1000, Loss: 0.03761119768023491
+Time elapsed (min):  5.1
+Epoch 45/1000, Loss: 0.028722824528813362
+Time elapsed (min):  5.76
+Epoch 50/1000, Loss: 0.01946263201534748
+Time elapsed (min):  6.4
+Epoch 55/1000, Loss: 0.01662496291100979
+Time elapsed (min):  7.03
+Early stopping!
+Time elapsed (min):  7.3
+Train Loss: 0.017763985320925713
+Validation Loss: 0.13866162300109863
+
+Train Score: 1.0
+Validation Score: 0.5440172157166479
+
+
+Making predictions on test data...
+=== HSA ===
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.04933333333333333
+Validation positive example rate:
+ 0.056
+Overall positive example rate in train + validation:  0.05
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+class weights:  [0.00023375 0.0045045 ]
+
+Training the model...
+Epoch 5/1000, Loss: 0.2866940200328827
+Time elapsed (min):  0.7
+Epoch 10/1000, Loss: 0.16316230595111847
+Time elapsed (min):  1.33
+Epoch 15/1000, Loss: 0.09939210116863251
+Time elapsed (min):  1.96
+Epoch 20/1000, Loss: 0.0633402019739151
+Time elapsed (min):  2.59
+Epoch 25/1000, Loss: 0.05084468051791191
+Time elapsed (min):  3.22
+Epoch 30/1000, Loss: 0.03298662230372429
+Time elapsed (min):  3.85
+Epoch 35/1000, Loss: 0.025182247161865234
+Time elapsed (min):  4.5
+Epoch 40/1000, Loss: 0.026036635041236877
+Time elapsed (min):  5.15
+Epoch 45/1000, Loss: 0.018894610926508904
+Time elapsed (min):  5.79
+Epoch 50/1000, Loss: 0.014570430852472782
+Time elapsed (min):  6.44
+Epoch 55/1000, Loss: 0.015702420845627785
+Time elapsed (min):  7.09
+Early stopping!
+Time elapsed (min):  7.09
+Train Loss: 0.015702420845627785
+Validation Loss: 0.1387656033039093
+
+Train Score: 1.0
+Validation Score: 0.5946541530459858
+
+
+Making predictions on test data...
+=== sEH ===
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.05177777777777778
+Validation positive example rate:
+ 0.034
+Overall positive example rate in train + validation:  0.05
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558142, 1024)
+
+class weights:  [0.00023436 0.00429185]
+
+Training the model...
+Epoch 5/1000, Loss: 0.2383285015821457
+Time elapsed (min):  0.63
+Epoch 10/1000, Loss: 0.13505272567272186
+Time elapsed (min):  1.25
+Epoch 15/1000, Loss: 0.08832354098558426
+Time elapsed (min):  1.87
+Epoch 20/1000, Loss: 0.07056457549333572
+Time elapsed (min):  2.5
+Epoch 25/1000, Loss: 0.043973688036203384
+Time elapsed (min):  3.13
+Epoch 30/1000, Loss: 0.0352492593228817
+Time elapsed (min):  3.76
+Epoch 35/1000, Loss: 0.031247921288013458
+Time elapsed (min):  4.4
+Epoch 40/1000, Loss: 0.018839210271835327
+Time elapsed (min):  5.03
+Epoch 45/1000, Loss: 0.014930365607142448
+Time elapsed (min):  5.69
+Epoch 50/1000, Loss: 0.011399665847420692
+Time elapsed (min):  6.33
+Epoch 55/1000, Loss: 0.011139333248138428
+Time elapsed (min):  6.98
+Epoch 60/1000, Loss: 0.008166353218257427
+Time elapsed (min):  7.62
+Early stopping!
+Time elapsed (min):  7.75
+Train Loss: 0.008020639419555664
+Validation Loss: 0.05493152514100075
+
+Train Score: 1.0
+Validation Score: 0.8766120589650002
+
+
+Making predictions on test data...

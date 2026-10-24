@@ -1,0 +1,72 @@
+
+Loading data...
+Data loaded in 164.40 seconds
+   id  ... sEH_posrate-0.050_size-5.0M
+0   0  ...                       False
+1   1  ...                       False
+2   2  ...                       False
+3   3  ...                       False
+4   4  ...                       False
+
+[5 rows x 10 columns]
+Index(['id', 'buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'protein_name', 'binds',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M'],
+      dtype='object')
+Train data shape: (295246830, 10)
+
+Protein: BRD4
+Positive rate: 0.005
+Positive count: 456964.000
+
+Protein: HSA
+Positive rate: 0.004
+Positive count: 408410.000
+
+Protein: sEH
+Positive rate: 0.007
+Positive count: 724532.000
+
+Target numbers of positive samples:
+{'BRD4': 456964, 'HSA': 408410, 'sEH': 500000}
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:48: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==1].sample(n=n_pos_tar[protein])
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:52: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==0].sample(n=n_samples_tar-n_pos_tar[protein])
+
+Statistics for split BRD4_posrate-0.046_size-10.0M:
+
+Positive rates:
+0.0456964
+
+Positive counts:
+456964
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:48: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==1].sample(n=n_pos_tar[protein])
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:52: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==0].sample(n=n_samples_tar-n_pos_tar[protein])
+
+Statistics for split HSA_posrate-0.041_size-10.0M:
+
+Positive rates:
+0.040841
+
+Positive counts:
+408410
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:48: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==1].sample(n=n_pos_tar[protein])
+/scratch1/mynguyen/leash-BELKA/data/random_splits/sample_train_independent.py:52: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  selected_rows = train_data[train_data['protein_name'] == protein][train_data['binds']==0].sample(n=n_samples_tar-n_pos_tar[protein])
+
+Statistics for split sEH_posrate-0.050_size-10.0M:
+
+Positive rates:
+0.05
+
+Positive counts:
+500000
+
+Number of samples shared between 3 splits: 0
+
+Done!

@@ -1,0 +1,48 @@
+==========================================
+SLURM_JOB_ID = 22968089
+SLURM_JOB_NODELIST = a03-02
+TMPDIR = /tmp/SLURM_22968089
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.005, total number of train data = 5000000
+Short train data shape for protein BRD4:  (5000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  8.51
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.02
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.004991333333333334
+Validation positive example rate:
+ 0.005078
+Overall positive example rate in train + validation:  0.005
+
+class weights:  [2.23336971e-07 4.45216152e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.00341124483384192
+Time elapsed (min):  226.8
+Epoch 10/1000, Loss: 0.24836522340774536
+Time elapsed (min):  452.72
+Epoch 15/1000, Loss: 0.0019181963289156556
+Time elapsed (min):  679.22
+Early stopping!
+Time elapsed (min):  770.28
+Train Loss: 0.0016731451032683253
+Validation Loss: 0.018394088372588158
+
+Train Score: 0.3279267107330646
+Validation Score: 0.32569455033750044
+
+
+Making predictions on test data...

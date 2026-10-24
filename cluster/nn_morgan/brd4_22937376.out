@@ -1,0 +1,23 @@
+==========================================
+SLURM_JOB_ID = 22937376
+SLURM_JOB_NODELIST = a03-[18-19]
+TMPDIR = /tmp/SLURM_22937376
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+=== NN_BRD4_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004645333533301611
+Validation positive example rate:
+ 0.00462406319485293
+
+Calculating fingerprints for train data
+Processing:   0%|          | 0/88575 [00:00<?, ?batch/s]slurmstepd: error: *** JOB 22937376 ON a03-18 CANCELLED AT 2024-04-24T14:07:09 ***
+slurmstepd: error: Detected 301 oom_kill events in StepId=22937376.batch. Some of the step tasks have been OOM Killed.

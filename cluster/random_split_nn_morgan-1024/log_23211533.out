@@ -1,0 +1,356 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  sEH_5000000_posrate-0.05
+Memory used (in GB): 0.4332275390625
+
+Loading processed train data from pickle/parquet files
+../nn_morgan-1024_5M/train_sEH_5000000_posrate-0.05_1024bits.parquet
+Memory used (in GB): 38.96506881713867
+
+Train data length: 5000000
+Positive example rate in train:
+  sEH:  0.05
+Memory used (in GB): 38.96506881713867
+
+X_train shape:  (5000000, 1024)
+y_train shape:  (5000000, 1)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_sEH_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_sEH_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([4166666, 1024])
+y_train_t shape:  torch.Size([4166666, 1])
+X_val_t shape:  torch.Size([833334, 1024])
+y_val_t shape:  torch.Size([833334, 1])
+Memory used (in GB): 39.45316696166992
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.026796123012900352, Train Score: 0.8940195412912162
+Validation Loss: 0.03966179117560387, Validation Score: 0.9191030777953713
+Memory used (in GB): 39.966468811035156
+Time elapsed (min):  11.25
+
+Epoch 10/1000
+Train Loss: 0.1138995885848999, Train Score: 0.8958690233677566
+Validation Loss: 0.03973662108182907, Validation Score: 0.918379071768826
+Memory used (in GB): 39.966339111328125
+Time elapsed (min):  22.43
+
+Epoch 15/1000
+Train Loss: 0.04935430735349655, Train Score: 0.8958873087351015
+Validation Loss: 0.03949225693941116, Validation Score: 0.9192887090424964
+Memory used (in GB): 39.96637725830078
+Time elapsed (min):  33.58
+
+Epoch 20/1000
+Train Loss: 0.01930723525583744, Train Score: 0.8962272292120074
+Validation Loss: 0.03939276933670044, Validation Score: 0.9193938163157481
+Memory used (in GB): 39.96539306640625
+Time elapsed (min):  44.74
+Early stopping!
+Time elapsed (min):  46.99
+
+Train Loss: 0.03771026432514191
+Train Score: 0.935083323426109
+
+Validation Loss: 0.03384009748697281
+Validation Score: 0.9390599280451002
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 39.91240692138672
+Memory used (in GB): 39.951107025146484
+Memory used (in GB): 39.95692825317383
+Memory used (in GB): 39.968177795410156
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+is_BRD4    558859
+is_HSA     557895
+is_sEH     558142
+dtype: int64
+Memory used (in GB): 39.994815826416016
+
+=== Fold 2/6 ===
+Load model from previous fold
+Memory used (in GB): 39.969093322753906
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.23842377960681915, Train Score: 0.749896033899672
+Validation Loss: 0.2936874330043793, Validation Score: 0.9018567589810389
+Memory used (in GB): 40.02253341674805
+Time elapsed (min):  9.61
+
+Epoch 10/1000
+Train Loss: 0.2765439748764038, Train Score: 0.7500616038149849
+Validation Loss: 0.2936874330043793, Validation Score: 0.9018567589810389
+Memory used (in GB): 40.02226638793945
+Time elapsed (min):  19.31
+
+Epoch 15/1000
+Train Loss: 0.25107136368751526, Train Score: 0.749692339567538
+Validation Loss: 0.2936874330043793, Validation Score: 0.9018567589810389
+Memory used (in GB): 40.02173614501953
+Time elapsed (min):  29.02
+
+Epoch 20/1000
+Train Loss: 0.2755301594734192, Train Score: 0.7489293471854489
+Validation Loss: 0.2936874330043793, Validation Score: 0.9018567589810389
+Memory used (in GB): 40.02222442626953
+Time elapsed (min):  38.75
+Early stopping!
+Time elapsed (min):  40.73
+
+Train Loss: 0.0008740288321860135
+Train Score: 0.9422693804608718
+
+Validation Loss: 0.03236985206604004
+Validation Score: 0.943610541856359
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 39.99839401245117
+Memory used (in GB): 40.02195739746094
+Memory used (in GB): 40.04579162597656
+Memory used (in GB): 40.05595016479492
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 40.07368469238281
+
+=== Fold 3/6 ===
+Load model from previous fold
+Memory used (in GB): 40.05622100830078
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.26296165585517883, Train Score: 0.749782091888565
+Validation Loss: 0.29388874769210815, Validation Score: 0.9023681452624119
+Memory used (in GB): 40.10861587524414
+Time elapsed (min):  9.61
+
+Epoch 10/1000
+Train Loss: 0.2603027820587158, Train Score: 0.7504784433212421
+Validation Loss: 0.29388874769210815, Validation Score: 0.9023681452624119
+Memory used (in GB): 40.108489990234375
+Time elapsed (min):  19.35
+
+Epoch 15/1000
+Train Loss: 0.26433610916137695, Train Score: 0.7502429688070967
+Validation Loss: 0.29388874769210815, Validation Score: 0.9023681452624119
+Memory used (in GB): 40.108673095703125
+Time elapsed (min):  29.06
+
+Epoch 20/1000
+Train Loss: 0.2589534819126129, Train Score: 0.7500772797572768
+Validation Loss: 0.29388874769210815, Validation Score: 0.9023681452624119
+Memory used (in GB): 40.10850524902344
+Time elapsed (min):  38.76
+Early stopping!
+Time elapsed (min):  40.72
+
+Train Loss: 0.01149661187082529
+Train Score: 0.9422717521780819
+
+Validation Loss: 0.03214194253087044
+Validation Score: 0.9436066546259496
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 40.060386657714844
+Memory used (in GB): 40.068180084228516
+Memory used (in GB): 40.07966995239258
+Memory used (in GB): 40.0866813659668
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 40.104759216308594
+
+=== Fold 4/6 ===
+Load model from previous fold
+Memory used (in GB): 40.08684539794922
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.27132463455200195, Train Score: 0.7495812944752299
+Validation Loss: 0.2942560315132141, Validation Score: 0.9006180534621878
+Memory used (in GB): 40.135276794433594
+Time elapsed (min):  9.6
+
+Epoch 10/1000
+Train Loss: 0.28156664967536926, Train Score: 0.7508090761559922
+Validation Loss: 0.2942560315132141, Validation Score: 0.9006180534621878
+Memory used (in GB): 40.135231018066406
+Time elapsed (min):  19.3
+
+Epoch 15/1000
+Train Loss: 0.29600170254707336, Train Score: 0.7497918494353217
+Validation Loss: 0.2942560315132141, Validation Score: 0.9006180534621878
+Memory used (in GB): 40.13523483276367
+Time elapsed (min):  29.0
+
+Epoch 20/1000
+Train Loss: 0.25106245279312134, Train Score: 0.7494249147480543
+Validation Loss: 0.2942560315132141, Validation Score: 0.9006180534621878
+Memory used (in GB): 40.13521957397461
+Time elapsed (min):  38.67
+Early stopping!
+Time elapsed (min):  40.62
+
+Train Loss: 0.01152374129742384
+Train Score: 0.9425838161686122
+
+Validation Loss: 0.032652031630277634
+Validation Score: 0.9420391025786605
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 40.077606201171875
+Memory used (in GB): 40.083656311035156
+Memory used (in GB): 40.110618591308594
+Memory used (in GB): 40.11492919921875
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 40.133968353271484
+
+=== Fold 5/6 ===
+Load model from previous fold
+Memory used (in GB): 40.11411666870117
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.2537204623222351, Train Score: 0.7504906717497749
+Validation Loss: 0.2936420440673828, Validation Score: 0.9015936209677211
+Memory used (in GB): 40.162330627441406
+Time elapsed (min):  9.62
+
+Epoch 10/1000
+Train Loss: 0.25643184781074524, Train Score: 0.7503085526895107
+Validation Loss: 0.2936420440673828, Validation Score: 0.9015936209677211
+Memory used (in GB): 40.162322998046875
+Time elapsed (min):  19.32
+
+Epoch 15/1000
+Train Loss: 0.2728056013584137, Train Score: 0.7505863235792548
+Validation Loss: 0.2936420440673828, Validation Score: 0.9015936209677211
+Memory used (in GB): 40.16248321533203
+Time elapsed (min):  29.06
+
+Epoch 20/1000
+Train Loss: 0.2519097626209259, Train Score: 0.7507310500234806
+Validation Loss: 0.2936420440673828, Validation Score: 0.9015936209677211
+Memory used (in GB): 40.16250991821289
+Time elapsed (min):  38.74
+Early stopping!
+Time elapsed (min):  40.7
+
+Train Loss: 0.010870182886719704
+Train Score: 0.942335169541292
+
+Validation Loss: 0.03202435374259949
+Validation Score: 0.9432978623565859
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 40.10079574584961
+Memory used (in GB): 40.10528564453125
+Memory used (in GB): 40.11262893676758
+Memory used (in GB): 40.11298751831055
+y_test_pred shape: (1674896, 1)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 40.131065368652344
+
+=== Fold 6/6 ===
+Load model from previous fold
+Memory used (in GB): 40.11082458496094
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.30467918515205383, Train Score: 0.7496170112997455
+Validation Loss: 0.29367637634277344, Validation Score: 0.9017579257164217
+Memory used (in GB): 40.161006927490234
+Time elapsed (min):  9.66
+
+Epoch 10/1000
+Train Loss: 0.2553410530090332, Train Score: 0.7497945052886263
+Validation Loss: 0.29367637634277344, Validation Score: 0.9017579257164217
+Memory used (in GB): 40.16148376464844
+Time elapsed (min):  19.38
+
+Epoch 15/1000
+Train Loss: 0.27441832423210144, Train Score: 0.7497602208928519
+Validation Loss: 0.29367637634277344, Validation Score: 0.9017579257164217
+Memory used (in GB): 40.16183090209961
+Time elapsed (min):  29.11
+
+Epoch 20/1000
+Train Loss: 0.2935959994792938, Train Score: 0.7498285114178778
+Validation Loss: 0.29367637634277344, Validation Score: 0.9017579257164217
+Memory used (in GB): 40.161903381347656
+Time elapsed (min):  38.8
+Early stopping!
+Time elapsed (min):  40.76
+
+Train Loss: 0.01089373230934143
+Train Score: 0.9423167064189601
+
+Validation Loss: 0.03217489644885063
+Validation Score: 0.9433905927738282
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 40.099525451660156
+Memory used (in GB): 40.105926513671875
+Memory used (in GB): 40.112152099609375
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py", line 429, in <module>
+    
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2956, in read_table
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2507, in __init__
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/dataset.py", line 782, in dataset
+    # collect the keyword arguments for later reuse
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/dataset.py", line 465, in _filesystem_dataset
+    if source and isinstance(source[0], FileInfo):
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/dataset.py", line 441, in _ensure_single_source
+    raise FileNotFoundError(path)
+FileNotFoundError: test_sEH_1024bits_invar0bits_chunk4.parquet

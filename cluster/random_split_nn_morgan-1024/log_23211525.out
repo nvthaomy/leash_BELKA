@@ -1,0 +1,294 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.050_size-0.005M
+
+Loading train data
+Columns:  Index(['buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'binds_BRD4', 'binds_HSA',
+       'binds_sEH', 'bb_test_noshare', 'bb_test_mixshare', 'random_test',
+       'full_test', 'posrate-0.050_size-0.005M', 'posrate-0.027_size-15.0M',
+       'posrate-0.041_size-10.0M', 'posrate-0.020_size-20.0M',
+       'posrate-0.082_size-5.0M', 'posrate-0.050_size-5.0M',
+       'posrate-0.010_size-5.0M',
+       'indp_posrate-0.010_size-each-5.0M_size-total-14.251M',
+       'indp_posrate-0.050_size-each-5.0M_size-total-14.240M',
+       'indp_posrate-0.050_size-each-2.0M_size-total-5.876M',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M', 'BRD4_posrate-0.030_size-15.0M',
+       'HSA_posrate-0.027_size-15.0M', 'sEH_posrate-0.048_size-15.0M',
+       'BRD4_posrate-0.046_size-10.0M', 'HSA_posrate-0.041_size-10.0M',
+       'sEH_posrate-0.050_size-10.0M'],
+      dtype='object')
+Length of train data in split: 5000
+Number of samples in posrate-0.050_size-0.005M that are in the full_test set: 783
+
+Calculating fingerprints for train data
+Processing chunk: 1/1
+/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py:128: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Time elapsed (min):  0.07
+Memory used (in GB): 0.6704025268554688
+
+Loading processed train data from pickle/parquet files
+train_posrate-0.050_size-0.005M_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 0.7027931213378906
+
+Train data length: 5000
+Positive example rate in train:
+  BRD4:  0.05
+  HSA:  0.05
+  sEH:  0.05
+Memory used (in GB): 0.7027931213378906
+
+X_train shape:  (5000, 1024)
+y_train shape:  (5000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.050_size-0.005M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([4166, 1024])
+y_train_t shape:  torch.Size([4166, 3])
+X_val_t shape:  torch.Size([834, 1024])
+y_val_t shape:  torch.Size([834, 3])
+Memory used (in GB): 0.9292831420898438
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.48816627264022827, Train Score: 0.22697057049387626
+Validation Loss: 0.5684744715690613, Validation Score: 0.35857411177376924
+Memory used (in GB): 1.0832939147949219
+Time elapsed (min):  0.05
+
+Epoch 10/1000
+Train Loss: 0.36277562379837036, Train Score: 0.44252220264055137
+Validation Loss: 0.46564388275146484, Validation Score: 0.5192285448513513
+Memory used (in GB): 1.08331298828125
+Time elapsed (min):  0.06
+
+Epoch 15/1000
+Train Loss: 0.27462032437324524, Train Score: 0.5814937578168782
+Validation Loss: 0.38986897468566895, Validation Score: 0.5442117459356431
+Memory used (in GB): 1.08331298828125
+Time elapsed (min):  0.06
+
+Epoch 20/1000
+Train Loss: 0.2176034152507782, Train Score: 0.7054992793661523
+Validation Loss: 0.3283193111419678, Validation Score: 0.5704029008961764
+Memory used (in GB): 1.08331298828125
+Time elapsed (min):  0.07
+
+Epoch 25/1000
+Train Loss: 0.18542461097240448, Train Score: 0.7859787659685643
+Validation Loss: 0.27836981415748596, Validation Score: 0.5894992989791805
+Memory used (in GB): 1.0833168029785156
+Time elapsed (min):  0.07
+
+Epoch 30/1000
+Train Loss: 0.14767277240753174, Train Score: 0.8504048610161042
+Validation Loss: 0.24568411707878113, Validation Score: 0.59573223386384
+Memory used (in GB): 1.0833358764648438
+Time elapsed (min):  0.08
+
+Epoch 35/1000
+Train Loss: 0.11821718513965607, Train Score: 0.9027581319734583
+Validation Loss: 0.21522726118564606, Validation Score: 0.5961434239972153
+Memory used (in GB): 1.0833396911621094
+Time elapsed (min):  0.09
+
+Epoch 40/1000
+Train Loss: 0.10366284102201462, Train Score: 0.9277269982774531
+Validation Loss: 0.190143421292305, Validation Score: 0.5982400760373857
+Memory used (in GB): 1.083343505859375
+Time elapsed (min):  0.09
+
+Epoch 45/1000
+Train Loss: 0.08615468442440033, Train Score: 0.9543016405266145
+Validation Loss: 0.17391151189804077, Validation Score: 0.6107545350728549
+Memory used (in GB): 1.083343505859375
+Time elapsed (min):  0.1
+
+Epoch 50/1000
+Train Loss: 0.07629856467247009, Train Score: 0.9723073312005774
+Validation Loss: 0.15971733629703522, Validation Score: 0.6081553213256992
+Memory used (in GB): 1.0833587646484375
+Time elapsed (min):  0.1
+
+Epoch 55/1000
+Train Loss: 0.06717538833618164, Train Score: 0.9845123032027839
+Validation Loss: 0.15023495256900787, Validation Score: 0.6181788418837088
+Memory used (in GB): 1.0833587646484375
+Time elapsed (min):  0.11
+
+Epoch 60/1000
+Train Loss: 0.05853114277124405, Train Score: 0.9891208951655167
+Validation Loss: 0.1408870816230774, Validation Score: 0.6355610404395116
+Memory used (in GB): 1.0833587646484375
+Time elapsed (min):  0.12
+
+Epoch 65/1000
+Train Loss: 0.05384642630815506, Train Score: 0.9886088877763648
+Validation Loss: 0.13225233554840088, Validation Score: 0.6425829257922195
+Memory used (in GB): 1.0833587646484375
+Time elapsed (min):  0.12
+
+Epoch 70/1000
+Train Loss: 0.0528181791305542, Train Score: 0.9924674971513523
+Validation Loss: 0.12745192646980286, Validation Score: 0.6328847188699523
+Memory used (in GB): 1.0833587646484375
+Time elapsed (min):  0.13
+
+Epoch 75/1000
+Train Loss: 0.050653014332056046, Train Score: 0.9948305806299895
+Validation Loss: 0.12048681080341339, Validation Score: 0.6453238409068771
+Memory used (in GB): 1.0833663940429688
+Time elapsed (min):  0.14
+
+Epoch 80/1000
+Train Loss: 0.043010540306568146, Train Score: 0.9965600498092199
+Validation Loss: 0.11729469150304794, Validation Score: 0.6557988316705057
+Memory used (in GB): 1.0833663940429688
+Time elapsed (min):  0.14
+
+Epoch 85/1000
+Train Loss: 0.037487421184778214, Train Score: 0.998761931616993
+Validation Loss: 0.11345512419939041, Validation Score: 0.6550758495686936
+Memory used (in GB): 1.0833663940429688
+Time elapsed (min):  0.15
+
+Epoch 90/1000
+Train Loss: 0.03723548352718353, Train Score: 0.9987583982271573
+Validation Loss: 0.10915088653564453, Validation Score: 0.6548142161451136
+Memory used (in GB): 1.0833663940429688
+Time elapsed (min):  0.15
+
+Epoch 95/1000
+Train Loss: 0.036641303449869156, Train Score: 0.9993423607946685
+Validation Loss: 0.10614684224128723, Validation Score: 0.6564468150566177
+Memory used (in GB): 1.0833663940429688
+Time elapsed (min):  0.16
+
+Epoch 100/1000
+Train Loss: 0.030422264710068703, Train Score: 0.9990167290131211
+Validation Loss: 0.10475284606218338, Validation Score: 0.6615253786654922
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.17
+
+Epoch 105/1000
+Train Loss: 0.02717611752450466, Train Score: 0.9992986158168637
+Validation Loss: 0.10157124698162079, Validation Score: 0.664571745230887
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.17
+
+Epoch 110/1000
+Train Loss: 0.025052743032574654, Train Score: 0.9997959288345528
+Validation Loss: 0.10019362717866898, Validation Score: 0.6689376690261851
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.18
+
+Epoch 115/1000
+Train Loss: 0.021152429282665253, Train Score: 0.9990186476372849
+Validation Loss: 0.09922336041927338, Validation Score: 0.6649440314790022
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.18
+
+Epoch 120/1000
+Train Loss: 0.022903911769390106, Train Score: 0.9991700768432152
+Validation Loss: 0.09879344701766968, Validation Score: 0.6730287000722553
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.19
+
+Epoch 125/1000
+Train Loss: 0.02285550720989704, Train Score: 0.9992023073901235
+Validation Loss: 0.09535899013280869, Validation Score: 0.675632013916327
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.2
+
+Epoch 130/1000
+Train Loss: 0.020905429497361183, Train Score: 0.9997930886726387
+Validation Loss: 0.0931607112288475, Validation Score: 0.6783384232378264
+Memory used (in GB): 1.0833740234375
+Time elapsed (min):  0.2
+
+Epoch 135/1000
+Train Loss: 0.01830616220831871, Train Score: 0.9999344875196017
+Validation Loss: 0.09420732408761978, Validation Score: 0.6732057618499045
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.21
+
+Epoch 140/1000
+Train Loss: 0.015989240258932114, Train Score: 0.9999573774250696
+Validation Loss: 0.09491176903247833, Validation Score: 0.6615640738777736
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.21
+
+Epoch 145/1000
+Train Loss: 0.01556588988751173, Train Score: 0.99974195526047
+Validation Loss: 0.09330152720212936, Validation Score: 0.6738477895631161
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.22
+
+Epoch 150/1000
+Train Loss: 0.01621064357459545, Train Score: 0.9999603466032461
+Validation Loss: 0.09349875897169113, Validation Score: 0.6799451883126562
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.23
+
+Epoch 155/1000
+Train Loss: 0.014191475696861744, Train Score: 0.9999752882203287
+Validation Loss: 0.09286504983901978, Validation Score: 0.6740139727936729
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.23
+
+Epoch 160/1000
+Train Loss: 0.013563180342316628, Train Score: 0.9999626259983683
+Validation Loss: 0.09097454696893692, Validation Score: 0.6782381526140485
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.24
+
+Epoch 165/1000
+Train Loss: 0.01388184167444706, Train Score: 0.9999800300928839
+Validation Loss: 0.09274829179048538, Validation Score: 0.6737919539791583
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.24
+
+Epoch 170/1000
+Train Loss: 0.010865078307688236, Train Score: 0.9999826357587234
+Validation Loss: 0.09213000535964966, Validation Score: 0.667210066513799
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.25
+
+Epoch 175/1000
+Train Loss: 0.010454407893121243, Train Score: 0.9999975082352823
+Validation Loss: 0.091648168861866, Validation Score: 0.6802788527628838
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.26
+
+Epoch 180/1000
+Train Loss: 0.012065984308719635, Train Score: 0.9999825809190889
+Validation Loss: 0.09375834465026855, Validation Score: 0.6647753876100811
+Memory used (in GB): 1.0833892822265625
+Time elapsed (min):  0.26
+Early stopping!
+Time elapsed (min):  0.26
+
+Train Loss: 0.013563180342316628
+Train Score: 0.9999626259983683
+
+Validation Loss: 0.09097454696893692
+Validation Score: 0.6782381526140485
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3_newsplit.py", line 454, in <module>
+    y_test_pred = np.concatenate(y_test_pred, axis=0)
+ValueError: need at least one array to concatenate

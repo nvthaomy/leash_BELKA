@@ -1,0 +1,32 @@
+==========================================
+SLURM_JOB_ID = 21588889
+SLURM_JOB_NODELIST = a12-03
+TMPDIR = /tmp/SLURM_21588889
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Memory used (in GB): 0.42395782470703125
+Is CUDA available:  True
+Loading processed data from pickle files
+Memory used (in GB): 44.06147766113281
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.049998666666666663
+Validation positive example rate:
+ 0.050012
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 43.58494186401367
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500000,)
+y_train shape:  (4500000,)
+X_validation shape:  (500000, 1024)
+y_validation shape:  (500000,)
+X_test shape:  (558142, 1024)
+
+class weights:  [2.33917800e-07 4.44456297e-06]
+
+Training the model...
+slurmstepd: error: *** JOB 21588889 ON a12-03 CANCELLED AT 2024-04-27T09:31:00 ***

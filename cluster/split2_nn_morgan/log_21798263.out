@@ -1,0 +1,112 @@
+==========================================
+SLURM_JOB_ID = 21798263
+SLURM_JOB_NODELIST = a12-06
+TMPDIR = /tmp/SLURM_21798263
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.041_size-10.0M
+Memory used (in GB): 0.4734916687011719
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk1.parquet
+Memory used (in GB): 15.821929931640625
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk10.parquet
+Memory used (in GB): 31.15947723388672
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk2.parquet
+Memory used (in GB): 46.442256927490234
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk3.parquet
+Memory used (in GB): 61.73439025878906
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk4.parquet
+Memory used (in GB): 76.9948959350586
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk5.parquet
+Memory used (in GB): 92.25430679321289
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk6.parquet
+Memory used (in GB): 107.51578140258789
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk7.parquet
+Memory used (in GB): 122.77496719360352
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk8.parquet
+Memory used (in GB): 138.09442901611328
+processed_data/train_posrate-0.041_size-10.0M_1024bits_invar1024bits_chunk9.parquet
+Memory used (in GB): 153.35427474975586
+
+Train data length: 10000000
+Positive example rate in train:
+  BRD4:  0.0456962
+  HSA:  0.0408408
+  sEH:  0.05
+Memory used (in GB): 153.42800903320312
+
+X_train shape:  (10000000, 2048)
+y_train shape:  (10000000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.041_size-10.0M_NN5_00_1024bits_invar1024bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_posrate-0.082_size-5.0M_NN5_00_1024bits_invar1024bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/5 ===
+X_train_fold shape:  (8000000, 2048)
+y_train_fold shape:  (8000000, 3)
+X_val_fold shape:  (2000000, 2048)
+y_val_fold shape:  (2000000, 3)
+Memory used (in GB): 309.7485008239746
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.06634840369224548, Train Score: 0.7659647681589582
+Validation Loss: 0.0640285387635231, Validation Score: 0.8057023376118838
+Memory used (in GB): 310.2904052734375
+Time elapsed (min):  28.47
+
+Epoch 10/1000
+Train Loss: 0.07168322801589966, Train Score: 0.7664861931335679
+Validation Loss: 0.06384866684675217, Validation Score: 0.8060957845601154
+Memory used (in GB): 310.3131332397461
+Time elapsed (min):  56.61
+
+Epoch 15/1000
+Train Loss: 0.06760415434837341, Train Score: 0.7668944344371481
+Validation Loss: 0.06421994417905807, Validation Score: 0.8062375533661275
+Memory used (in GB): 310.344783782959
+Time elapsed (min):  84.56
+Early stopping!
+Time elapsed (min):  90.17
+
+Train Loss: 0.06826180219650269
+Train Score: 0.8152508733251524
+
+Validation Loss: 0.059845827519893646
+Validation Score: 0.8203918028466445
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_1024bits_invar1024bits_chunk1.parquet
+Memory used (in GB): 310.1717720031738
+processed_data/test_1024bits_invar1024bits_chunk2.parquet
+Memory used (in GB): 310.1722984313965
+processed_data/test_1024bits_invar1024bits_chunk3.parquet
+Memory used (in GB): 310.1996307373047
+processed_data/test_1024bits_invar1024bits_chunk4.parquet
+Memory used (in GB): 310.203311920166
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+is_BRD4    558859
+is_HSA     557895
+is_sEH     558142
+dtype: int64
+Memory used (in GB): 310.2005615234375
+
+=== Fold 2/5 ===
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py", line 450, in <module>
+    X_train_fold, X_val_fold = X_train[train_index], X_train[val_index]
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 122. GiB for an array with shape (8000000, 2048) and data type int64

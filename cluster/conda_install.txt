@@ -1,0 +1,23 @@
+conda create -n py310 python=3.10 numpy scipy pandas matplotlib  
+
+module load gcc/11.3.0
+module load cuda/11.8.0
+conda activate py310
+conda install conda-forge::imbalanced-learn conda-forge::multiprocess conda-forge::psutil
+conda install anaconda::scikit-learn conda-forge::rdkit conda-forge::pyarrow
+
+
+using conda to install torch_geometric
+# conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pyg -c pyg 
+# remove only the cpu version of pytorch that was installed by conda
+conda remove --force pytorch
+
+using pip: (better, conda might downgrade packages)
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+python -m pip install torch_geometric
+# Optional dependencies:
+python -m pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.3.0+cu118.html
+
+
+conda install --freeze-installed <package_name>

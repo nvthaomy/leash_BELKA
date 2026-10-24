@@ -1,0 +1,73 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.05, total number of train data = 5000
+Short train data shape for protein BRD4:  (5000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.03
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.0
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.050666666666666665
+Validation positive example rate:
+ 0.044
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023408 0.00023408]
+
+Training the model...
+Epoch 5/1000, Loss: 0.018607189878821373
+Time elapsed (min):  0.46
+Epoch 10/1000, Loss: 0.04255933687090874
+Time elapsed (min):  0.91
+Epoch 15/1000, Loss: 0.03865964338183403
+Time elapsed (min):  1.36
+Epoch 20/1000, Loss: 0.033439863473176956
+Time elapsed (min):  1.82
+Epoch 25/1000, Loss: 0.014706852845847607
+Time elapsed (min):  2.29
+Epoch 30/1000, Loss: 0.002356957411393523
+Time elapsed (min):  2.76
+Early stopping!
+Time elapsed (min):  2.95
+Train Loss: 0.05845770239830017
+Validation Loss: 0.10363934934139252
+
+Train Score: 0.9999442013928087
+Validation Score: 0.6898377291749349
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_5k/nn.py", line 374, in <module>
+    plt.scatter(y_train, y_train_pred, marker='o', alpha=0.5, label='Train')
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

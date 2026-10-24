@@ -1,0 +1,33 @@
+==========================================
+SLURM_JOB_ID = 22968084
+SLURM_JOB_NODELIST = a02-17
+TMPDIR = /tmp/SLURM_22968084
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.05, total number of train data = 5000000
+Short train data shape for protein BRD4:  (5000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  8.93
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.04
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.049996
+Validation positive example rate:
+ 0.050036
+Overall positive example rate in train + validation:  0.05
+
+class weights:  [2.33917144e-07 4.44480003e-06]
+
+Training the model...
+slurmstepd: error: *** JOB 22968084 ON a02-17 CANCELLED AT 2024-04-25T12:11:44 ***

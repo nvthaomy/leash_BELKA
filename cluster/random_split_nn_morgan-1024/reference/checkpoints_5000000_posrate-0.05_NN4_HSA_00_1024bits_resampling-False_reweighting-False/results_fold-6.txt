@@ -1,0 +1,5 @@
+Train Loss: 0.0974523052573204
+Train Score: 0.6879734845092091
+
+Validation Loss: None
+Validation Score: None

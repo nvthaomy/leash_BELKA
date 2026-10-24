@@ -1,0 +1,58 @@
+==========================================
+SLURM_JOB_ID = 22968392
+SLURM_JOB_NODELIST = a03-11
+TMPDIR = /tmp/SLURM_22968392
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.051555555555555556
+Validation positive example rate:
+ 0.036
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.0002343  0.00431034]
+
+Training the model...
+Epoch 5/1000, Loss: 0.16481325030326843
+Time elapsed (min):  0.28
+Epoch 10/1000, Loss: 0.12756508588790894
+Time elapsed (min):  0.55
+Epoch 15/1000, Loss: 0.06238486245274544
+Time elapsed (min):  0.81
+Epoch 20/1000, Loss: 0.07033108174800873
+Time elapsed (min):  1.08
+Epoch 25/1000, Loss: 0.057975009083747864
+Time elapsed (min):  1.34
+Epoch 30/1000, Loss: 0.052057117223739624
+Time elapsed (min):  1.6
+Early stopping!
+Time elapsed (min):  1.65
+Train Loss: 0.04099506512284279
+Validation Loss: 0.10843703150749207
+
+Train Score: 0.9263745548905788
+Validation Score: 0.38334792796399186
+
+
+Making predictions on test data...

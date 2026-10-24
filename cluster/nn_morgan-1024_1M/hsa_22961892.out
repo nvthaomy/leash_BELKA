@@ -1,0 +1,74 @@
+==========================================
+SLURM_JOB_ID = 22961892
+SLURM_JOB_NODELIST = a04-02
+TMPDIR = /tmp/SLURM_22961892
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+
+Generating shorter train data for protein HSA, positive rate = 0.05, total number of train data = 1000000
+Short train data shape for protein HSA:  (1000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  1.92
+
+Calculating fingerprints for test data
+Time elapsed (min):  1.07
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.050048888888888886
+Validation positive example rate:
+ 0.04956
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (557895, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (557895, 1024)
+
+class weights:  [1.16965084e-06 2.22005151e-05]
+
+Training the model...
+Epoch 5/1000, Loss: 0.12759751081466675
+Time elapsed (min):  46.24
+Epoch 10/1000, Loss: 0.0844668596982956
+Time elapsed (min):  91.91
+Epoch 15/1000, Loss: 0.1401081085205078
+Time elapsed (min):  137.59
+Epoch 20/1000, Loss: 0.10330285131931305
+Time elapsed (min):  183.31
+Epoch 25/1000, Loss: 0.07635174691677094
+Time elapsed (min):  228.6
+Epoch 30/1000, Loss: 0.08212287724018097
+Time elapsed (min):  274.3
+Epoch 35/1000, Loss: 0.05078104883432388
+Time elapsed (min):  319.91
+Epoch 40/1000, Loss: 0.07471831142902374
+Time elapsed (min):  365.48
+Epoch 45/1000, Loss: 0.2004568874835968
+Time elapsed (min):  410.79
+Early stopping!
+Time elapsed (min):  419.96
+Train Loss: 0.13609561324119568
+Validation Loss: 0.09378929436206818
+
+Train Score: 0.7387245563565602
+Validation Score: 0.6834110799950711
+
+
+Making predictions on test data...

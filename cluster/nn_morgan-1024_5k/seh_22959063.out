@@ -1,0 +1,71 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein sEH:  (98415610, 7)
+
+Generating shorter train data for protein sEH, positive rate = 0.05, total number of train data = 5000
+Short train data shape for protein sEH:  (5000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.03
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.99
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.04933333333333333
+Validation positive example rate:
+ 0.056
+Overall positive example rate in train + validation:  0.05
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558142, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558142, 1024)
+
+class weights:  [0.00023375 0.00023375]
+
+Training the model...
+Epoch 5/1000, Loss: 0.06052704155445099
+Time elapsed (min):  0.44
+Epoch 10/1000, Loss: 0.010374516248703003
+Time elapsed (min):  0.9
+Epoch 15/1000, Loss: 0.015818173065781593
+Time elapsed (min):  1.35
+Epoch 20/1000, Loss: 0.0031738856341689825
+Time elapsed (min):  1.82
+Epoch 25/1000, Loss: 0.002507319673895836
+Time elapsed (min):  2.29
+Early stopping!
+Time elapsed (min):  2.65
+Train Loss: 0.002809742698445916
+Validation Loss: 0.13742434978485107
+
+Train Score: 0.9999994548645272
+Validation Score: 0.7064317397479438
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_5k/nn.py", line 374, in <module>
+    plt.scatter(y_train, y_train_pred, marker='o', alpha=0.5, label='Train')
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3687, in scatter
+    __ret = gca().scatter(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/__init__.py", line 1465, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4652, in scatter
+    raise ValueError("x and y must be the same size")
+ValueError: x and y must be the same size

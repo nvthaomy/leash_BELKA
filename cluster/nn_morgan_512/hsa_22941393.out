@@ -1,0 +1,23 @@
+==========================================
+SLURM_JOB_ID = 22941393
+SLURM_JOB_NODELIST = b01-[07-08]
+TMPDIR = /tmp/SLURM_22941393
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+=== NN_HSA_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004145266069974965
+Validation positive example rate:
+ 0.0041911034235321
+
+Calculating fingerprints for train data
+slurmstepd: error: *** JOB 22941393 ON b01-07 CANCELLED AT 2024-04-24T14:07:14 ***
+slurmstepd: error: Detected 281667 oom_kill events in StepId=22941393.batch. Some of the step tasks have been OOM Killed.

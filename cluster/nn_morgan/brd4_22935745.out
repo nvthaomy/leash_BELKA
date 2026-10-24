@@ -1,0 +1,25 @@
+=== NN_BRD4_resampling-True_reweighting-False ===
+Number of CPU nodes (cores) available: 64
+Number of CPU cores used by the Python script: 64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004646135122489433
+Validation positive example rate:
+ 0.004616848892162534
+
+Calculating fingerprints for train data
+Batch 100/88575
+Memory used (in GB): 18.60852813720703
+Batch 200/88575
+Memory used (in GB): 19.38906478881836
+Batch 300/88575
+Memory used (in GB): 21.522361755371094
+Batch 400/88575
+Memory used (in GB): 22.290756225585938
+slurmstepd: error: *** JOB 22935745 ON a04-05 CANCELLED AT 2024-04-22T14:00:38 ***

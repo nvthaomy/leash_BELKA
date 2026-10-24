@@ -1,0 +1,66 @@
+==========================================
+SLURM_JOB_ID = 23013239
+SLURM_JOB_NODELIST = b22-25
+TMPDIR = /tmp/SLURM_23013239
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.42047119140625
+Is CUDA available:  False
+Loading processed data from pickle files
+Memory used (in GB): 82.49876022338867
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.04997022222222222
+Validation positive example rate:
+ 0.050268
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 162.85057067871094
+
+class weights:  [2.33910797e-07 4.44709294e-06]
+Memory used (in GB): 112.3543472290039
+
+Training the model...
+Epoch 2/1000, Loss: 0.10086925327777863
+Time elapsed (min):  9.59
+Epoch 4/1000, Loss: 0.143260657787323
+Time elapsed (min):  19.41
+Epoch 6/1000, Loss: 0.03836122900247574
+Time elapsed (min):  30.31
+Epoch 8/1000, Loss: 0.36274203658103943
+Time elapsed (min):  41.61
+Epoch 10/1000, Loss: 0.004982457030564547
+Time elapsed (min):  53.26
+Epoch 12/1000, Loss: 0.08431632816791534
+Time elapsed (min):  64.84
+Epoch 14/1000, Loss: 0.04957689344882965
+Time elapsed (min):  76.57
+Epoch 16/1000, Loss: 0.01661299355328083
+Time elapsed (min):  87.99
+Epoch 18/1000, Loss: 0.042065612971782684
+Time elapsed (min):  99.71
+Epoch 20/1000, Loss: 0.14007018506526947
+Time elapsed (min):  111.66
+Epoch 22/1000, Loss: 0.08419498056173325
+Time elapsed (min):  123.46
+Epoch 24/1000, Loss: 0.052505120635032654
+Time elapsed (min):  135.13
+Epoch 26/1000, Loss: 0.22400370240211487
+Time elapsed (min):  147.15
+Epoch 28/1000, Loss: 0.0971466600894928
+Time elapsed (min):  159.09
+Epoch 30/1000, Loss: 0.07458925247192383
+Time elapsed (min):  170.77
+Early stopping!
+Time elapsed (min):  171.44
+Train Loss: 0.07458925247192383
+Validation Loss: 0.03211073577404022
+
+Train Score: 0.9499168381740628
+Validation Score: 0.9463867878602544
+
+
+Making predictions on test data...

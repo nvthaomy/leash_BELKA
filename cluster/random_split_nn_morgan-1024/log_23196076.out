@@ -1,0 +1,144 @@
+Number of available GPUs:  2
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  BRD4_5000000_posrate-0.05
+Memory used (in GB): 0.4379692077636719
+
+Loading processed train data from pickle/parquet files
+../nn_morgan-1024_5M/train_BRD4_5000000_posrate-0.05_1024bits.parquet
+Memory used (in GB): 39.06584167480469
+
+Train data length: 5000000
+Positive example rate in train:
+  BRD4:  0.05
+Memory used (in GB): 39.06584167480469
+
+X_train shape:  (5000000, 1024)
+y_train shape:  (5000000, 1)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_BRD4_5000000_posrate-0.05_CNN1d_00_1024bits_invar0bits_resampling-False_reweighting-False
+
+=== Fold 1/6 ===
+X_train_t shape:  torch.Size([4166666, 1024])
+y_train_t shape:  torch.Size([4166666, 1])
+X_val_t shape:  torch.Size([833334, 1024])
+y_val_t shape:  torch.Size([833334, 1])
+Memory used (in GB): 39.52290725708008
+
+Training the model...
+
+Epoch 5/1000
+Train Loss: 0.0022613273467868567, Train Score: 0.771402934129972
+Validation Loss: 0.06793232262134552, Validation Score: 0.8062737679188478
+Memory used (in GB): 40.022064208984375
+Time elapsed (min):  10.54
+
+Epoch 10/1000
+Train Loss: 0.0025875193532556295, Train Score: 0.773766214181632
+Validation Loss: 0.06845591217279434, Validation Score: 0.8067572232389224
+Memory used (in GB): 40.02210998535156
+Time elapsed (min):  21.01
+
+Epoch 15/1000
+Train Loss: 0.001982862828299403, Train Score: 0.7748255679636068
+Validation Loss: 0.06799060851335526, Validation Score: 0.8126881583649568
+Memory used (in GB): 40.02191925048828
+Time elapsed (min):  31.42
+
+Epoch 20/1000
+Train Loss: 0.00272050010971725, Train Score: 0.7753849171232037
+Validation Loss: 0.06699564307928085, Validation Score: 0.8132626129610259
+Memory used (in GB): 40.022193908691406
+Time elapsed (min):  41.85
+
+Epoch 25/1000
+Train Loss: 0.007207214832305908, Train Score: 0.7766684055072941
+Validation Loss: 0.06654614955186844, Validation Score: 0.8147883482958991
+Memory used (in GB): 40.02265167236328
+Time elapsed (min):  52.26
+
+Epoch 30/1000
+Train Loss: 0.0044844611547887325, Train Score: 0.7762860708079667
+Validation Loss: 0.06712173670530319, Validation Score: 0.8144443610227741
+Memory used (in GB): 40.0220832824707
+Time elapsed (min):  62.68
+
+Epoch 35/1000
+Train Loss: 0.0017191639635711908, Train Score: 0.7764956985768258
+Validation Loss: 0.06776802986860275, Validation Score: 0.8153530681277898
+Memory used (in GB): 40.02233123779297
+Time elapsed (min):  73.09
+
+Epoch 40/1000
+Train Loss: 0.0005847396678291261, Train Score: 0.7774642005085706
+Validation Loss: 0.06782619655132294, Validation Score: 0.8154694694225131
+Memory used (in GB): 40.022178649902344
+Time elapsed (min):  83.48
+
+Epoch 45/1000
+Train Loss: 0.001643711351789534, Train Score: 0.7768742354113725
+Validation Loss: 0.06636609882116318, Validation Score: 0.8171181541354138
+Memory used (in GB): 40.022789001464844
+Time elapsed (min):  93.91
+
+Epoch 50/1000
+Train Loss: 0.0021986649371683598, Train Score: 0.7773470276589546
+Validation Loss: 0.06728822737932205, Validation Score: 0.8160217093778447
+Memory used (in GB): 40.02233123779297
+Time elapsed (min):  104.33
+
+Epoch 55/1000
+Train Loss: 0.006036966573446989, Train Score: 0.7771954279455873
+Validation Loss: 0.06669891625642776, Validation Score: 0.8151391395769909
+Memory used (in GB): 40.022789001464844
+Time elapsed (min):  114.74
+
+Epoch 60/1000
+Train Loss: 0.0029017420019954443, Train Score: 0.777195761942614
+Validation Loss: 0.06682587414979935, Validation Score: 0.815188517125829
+Memory used (in GB): 40.02223205566406
+Time elapsed (min):  125.14
+
+Epoch 65/1000
+Train Loss: 0.001960896421223879, Train Score: 0.7767027356159076
+Validation Loss: 0.06875598430633545, Validation Score: 0.8140085075673763
+Memory used (in GB): 40.02219009399414
+Time elapsed (min):  135.52
+
+Epoch 70/1000
+Train Loss: 0.004205637611448765, Train Score: 0.7769731038518768
+Validation Loss: 0.06697511672973633, Validation Score: 0.8154941714158813
+Memory used (in GB): 40.02225112915039
+Time elapsed (min):  145.9
+Early stopping!
+Time elapsed (min):  154.22
+
+Train Loss: 0.001799565739929676
+Train Score: 0.7773597581652031
+
+Validation Loss: 0.0658879280090332
+Validation Score: 0.8153817192187396
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/nn_v3.py", line 442, in <module>
+    tmp = model(X_test_t)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch1/mynguyen/leash-BELKA/random_split_nn_morgan-1024/tools.py", line 456, in forward
+    x = self.pool(self.relu(self.bn1(self.conv1(x)))) # n_in = 1024, n_out = 512
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 310, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 306, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 68.36 GiB. GPU 

@@ -1,0 +1,6 @@
+==========================================
+SLURM_JOB_ID = 22966869
+SLURM_JOB_NODELIST = a02-14
+TMPDIR = /tmp/SLURM_22966869
+==========================================
+python: can't open file '/scratch1/mynguyen/leash-BELKA/rf_morgan-1024_5k/nn.py': [Errno 2] No such file or directory

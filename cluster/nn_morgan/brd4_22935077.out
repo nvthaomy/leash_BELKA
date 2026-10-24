@@ -1,0 +1,19 @@
+=== NN_BRD4_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Train size:  88574049
+Validation size:  9841561
+
+Train positive example rate:
+ 0.004639733698975419
+Validation positive example rate:
+ 0.004674461703788657
+
+Calculating fingerprints for train data
+Batch 100/88575
+Memory used (in GB): 18.612621307373047
+Batch 200/88575
+Memory used (in GB): 19.392982482910156
+slurmstepd: error: *** JOB 22935077 ON a04-02 CANCELLED AT 2024-04-22T13:41:20 ***

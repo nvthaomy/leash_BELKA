@@ -1,0 +1,95 @@
+==========================================
+SLURM_JOB_ID = 21799114
+SLURM_JOB_NODELIST = a12-02
+TMPDIR = /tmp/SLURM_21799114
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.082_size-5.0M
+Memory used (in GB): 0.47444915771484375
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 20.01253890991211
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 26.62700653076172
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 33.063148498535156
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 39.54458999633789
+processed_data/train_posrate-0.082_size-5.0M_graph_1024bits_invar0bits_chunk5.pkl
+Memory used (in GB): 45.882659912109375
+
+Train data length: 5000000
+Positive example rate in train:
+  BRD4:  0.0913926
+  HSA:  0.0816818
+  sEH:  0.1
+Memory used (in GB): 45.93463897705078
+
+X_train length:  5000000
+y_train shape:  (5000000, 3)
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.082_size-5.0M_GCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_posrate-0.082_size-5.0M_GCN_00_1024bits_invar0bits_resampling-False_reweighting-False/model_best_fold-0.pth
+
+=== Fold 1/5 ===
+X_train_t length:  4000000
+y_train_t shape:  torch.Size([4000000, 3])
+X_val_t length:  1000000
+y_val_t shape:  torch.Size([1000000, 3])
+Memory used (in GB): 46.45010757446289
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.2955452501773834, Train Score: 0.1759955897574687
+Validation Loss: 0.2895534932613373, Validation Score: 0.19218920871932335
+Memory used (in GB): 46.787681579589844
+Time elapsed (min):  22.76
+
+Epoch 10/500
+Train Loss: 0.28986042737960815, Train Score: 0.17612198535858112
+Validation Loss: 0.28956297039985657, Validation Score: 0.19231220451600833
+Memory used (in GB): 46.757591247558594
+Time elapsed (min):  43.89
+
+Epoch 15/500
+Train Loss: 0.26973697543144226, Train Score: 0.17616497210749893
+Validation Loss: 0.28946349024772644, Validation Score: 0.19155650445199518
+Memory used (in GB): 46.78841018676758
+Time elapsed (min):  65.24
+Early stopping!
+Time elapsed (min):  69.52
+
+Train Loss: 0.2684361934661865
+Train Score: 0.19319949532460665
+
+Validation Loss: 0.28857770562171936
+Validation Score: 0.19342213634396616
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 47.15081787109375
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 49.41779327392578
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 49.56545639038086
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 49.56565475463867
+y_test_pred shape: (1674896, 3)
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/gcn_morgan-1024/nn_v3.5.py", line 660, in <module>
+    test_data = pd.concat(test_data)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'tuple'>'; only Series and DataFrame objs are valid

@@ -1,0 +1,15 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+=== NN_HSA_resampling-True_reweighting-False ===
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein HSA:  (3000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.04
+
+Calculating fingerprints for validation data
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn.py", line 92, in <module>
+    validation_fingerprints = parallel_process(validation_data['molecule_smiles'], batch_smiles_to_fp, batch_size)
+NameError: name 'validation_data' is not defined

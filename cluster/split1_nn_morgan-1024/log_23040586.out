@@ -1,0 +1,9 @@
+Number of available GPUs:  0
+Number of available CPUs:  24
+Debug mode:  False
+Memory used (in GB): 0.40760040283203125
+
+Loading processed train data from pickle/parquet files
+train_full_test_1024bits_chunk1.parquet
+/var/spool/slurm/d/job23040586/slurm_script: line 25: 139833 Killed                  python -u nn.py -model_name NN5b -model_index 0
+slurmstepd: error: Detected 1 oom_kill event in StepId=23040586.batch. Some of the step tasks have been OOM Killed.

@@ -1,0 +1,239 @@
+==========================================
+SLURM_JOB_ID = 21795135
+SLURM_JOB_NODELIST = a12-02
+TMPDIR = /tmp/SLURM_21795135
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Debug mode:  False
+Split name:  posrate-0.027_size-15.0M
+
+Loading train data from ../data/split2/train_folds.parquet
+Time elapsed (min):  1.18
+Columns:  Index(['buildingblock1_smiles', 'buildingblock2_smiles',
+       'buildingblock3_smiles', 'molecule_smiles', 'binds_BRD4', 'binds_HSA',
+       'binds_sEH', 'bb_test_noshare', 'bb_test_mixshare', 'random_test',
+       'full_test', 'posrate-0.050_size-0.005M', 'posrate-0.027_size-15.0M',
+       'posrate-0.041_size-10.0M', 'posrate-0.020_size-20.0M',
+       'posrate-0.082_size-5.0M', 'posrate-0.050_size-5.0M',
+       'posrate-0.010_size-5.0M',
+       'indp_posrate-0.010_size-each-5.0M_size-total-14.251M',
+       'indp_posrate-0.050_size-each-5.0M_size-total-14.240M',
+       'indp_posrate-0.050_size-each-2.0M_size-total-5.876M',
+       'BRD4_posrate-0.050_size-5.0M', 'HSA_posrate-0.050_size-5.0M',
+       'sEH_posrate-0.050_size-5.0M', 'BRD4_posrate-0.030_size-15.0M',
+       'HSA_posrate-0.027_size-15.0M', 'sEH_posrate-0.048_size-15.0M',
+       'BRD4_posrate-0.046_size-10.0M', 'HSA_posrate-0.041_size-10.0M',
+       'sEH_posrate-0.050_size-10.0M'],
+      dtype='object')
+
+Split name:  posrate-0.027_size-15.0M
+
+Statistics in train_data[posrate-0.027_size-15.0M == True]:
+Total count: 15000000
+Positive rates:
+binds_BRD4    0.030464
+binds_HSA     0.027227
+binds_sEH     0.048302
+dtype: float64
+
+Calculating fingerprints for train data
+Processing chunk: 1/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 2/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 3/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 4/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 5/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 6/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 7/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 8/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 9/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 10/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 11/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 12/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 13/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 14/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Processing chunk: 15/15
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:231: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_data_chunk['molecule_fp'] = train_fingerprints
+Time elapsed (min):  39.65
+Memory used (in GB): 3.658000946044922
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk1.parquet
+Memory used (in GB): 11.315597534179688
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk2.parquet
+Memory used (in GB): 18.968868255615234
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk3.parquet
+Memory used (in GB): 26.606861114501953
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk4.parquet
+Memory used (in GB): 34.257904052734375
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk5.parquet
+Memory used (in GB): 41.92241668701172
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk6.parquet
+Memory used (in GB): 49.57466125488281
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk7.parquet
+Memory used (in GB): 57.20928192138672
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk8.parquet
+Memory used (in GB): 64.90769958496094
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk9.parquet
+Memory used (in GB): 72.59077072143555
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk10.parquet
+Memory used (in GB): 80.2596321105957
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk11.parquet
+Memory used (in GB): 87.92852783203125
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk12.parquet
+Memory used (in GB): 95.61116409301758
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk13.parquet
+Memory used (in GB): 103.28236770629883
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk14.parquet
+Memory used (in GB): 110.97101593017578
+processed_data/train_posrate-0.027_size-15.0M_1024bits_invar0bits_chunk15.parquet
+Memory used (in GB): 118.64694595336914
+
+Train data length: 15000000
+Positive example rate in train:
+  BRD4:  0.030464133333333334
+  HSA:  0.0272272
+  sEH:  0.04830193333333333
+Memory used (in GB): 118.75775909423828
+
+X_train shape:  (15000000, 1024)
+y_train shape:  (15000000, 3)
+
+Loading test data
+Protein counts: 
+protein_name
+BRD4    558859
+sEH     558142
+HSA     557895
+Name: count, dtype: int64
+
+Calculating fingerprints for test data
+Processing chunk: 1/4
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:347: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 2/4
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:347: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 3/4
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:347: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Processing chunk: 4/4
+/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py:347: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_data_chunk['molecule_fp'] = test_fingerprints
+Time elapsed (min):  6.28
+Is CUDA available:  True
+Device:  cuda
+
+Checkpoint directory:  checkpoints_posrate-0.027_size-15.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False
+Loaded model:  checkpoints_posrate-0.082_size-5.0M_NN4_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-5.pth
+
+=== Fold 1/5 ===
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split2_nn_morgan/nn_v3.5.py", line 479, in <module>
+    #     X_train_t = torch.tensor(X_train_fold, dtype=torch.float32)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 45.78 GiB. GPU 

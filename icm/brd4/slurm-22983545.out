@@ -1,0 +1,8 @@
+==========================================
+SLURM_JOB_ID = 22983545
+SLURM_JOB_NODELIST = b09-08
+TMPDIR = /tmp/SLURM_22983545
+==========================================
+1
+Docking inx file: ./test_bu.inx
+slurmstepd: error: *** JOB 22983545 ON b09-08 CANCELLED AT 2024-04-26T12:44:54 ***

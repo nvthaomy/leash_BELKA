@@ -1,0 +1,48 @@
+==========================================
+SLURM_JOB_ID = 22974374
+SLURM_JOB_NODELIST = b22-32
+TMPDIR = /tmp/SLURM_22974374
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.051333333333333335
+Validation positive example rate:
+ 0.038
+Overall positive example rate in train + validation:  0.05
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (557895, 1024)
+
+class weights:  [0.00023425 0.004329  ]
+
+Training the model...
+Epoch 5/1000, Loss: 0.14704759418964386
+Time elapsed (min):  0.64
+Epoch 10/1000, Loss: 0.14712414145469666
+Time elapsed (min):  1.2
+Epoch 15/1000, Loss: 0.15277978777885437
+Time elapsed (min):  1.9
+Epoch 20/1000, Loss: 0.08919183909893036
+Time elapsed (min):  2.43
+Epoch 25/1000, Loss: 0.1022268608212471
+Time elapsed (min):  3.19
+Early stopping!
+Time elapsed (min):  3.22
+Train Loss: 0.1022268608212471
+Validation Loss: 0.15915848314762115
+
+Train Score: 0.779070528782653
+Validation Score: 0.26570476377401875
+
+
+Making predictions on test data...

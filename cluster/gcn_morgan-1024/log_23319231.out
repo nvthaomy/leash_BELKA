@@ -1,0 +1,381 @@
+==========================================
+SLURM_JOB_ID = 23319231
+SLURM_JOB_NODELIST = d05-27
+TMPDIR = /tmp/SLURM_23319231
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  24
+Debug mode:  False
+Split name:  posrate-0.050_size-0.005M
+Memory used (in GB): 0.4694671630859375
+
+Loading processed train data from pickle/parquet files
+processed_data/train_posrate-0.050_size-0.005M_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 0.6114501953125
+
+X_train_fp shape:  (5000, 1024)
+X_train_graph length:  5000
+y_train shape:  (5000, 3)
+
+Positive example rate in train:
+  BRD4:  0.05
+  HSA:  0.05
+  sEH:  0.05
+Memory used (in GB): 0.6114883422851562
+Is CUDA available:  False
+Device:  cpu
+
+Checkpoint directory:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False
+FPGCN device: cpu
+Loaded model:  checkpoints_posrate-0.050_size-0.005M_FPGCN_00_1024bits_invar0bits_resampling-False_reweighting-False/model_fold-0.pth
+
+=== Fold 1/5 ===
+X_train length:  4000
+y_train shape:  (4000, 3)
+X_val length:  1000
+y_val shape:  (1000, 3)
+Memory used (in GB): 0.73541259765625
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.005472618620842695, Train Score: 0.9963935684142153
+Validation Loss: 0.03992423415184021, Validation Score: 0.9601326040850174
+Memory used (in GB): 1.0139884948730469
+Time elapsed (min):  0.12
+
+Epoch 10/500
+Train Loss: 0.007822367362678051, Train Score: 0.9993731830928089
+Validation Loss: 0.04415672644972801, Validation Score: 0.9532993125443632
+Memory used (in GB): 1.0150527954101562
+Time elapsed (min):  0.22
+
+Epoch 15/500
+Train Loss: 0.0028897407464683056, Train Score: 0.9996132444182882
+Validation Loss: 0.03844833001494408, Validation Score: 0.9527428669551105
+Memory used (in GB): 1.0127754211425781
+Time elapsed (min):  0.32
+
+Epoch 20/500
+Train Loss: 0.005753109231591225, Train Score: 0.999806846250989
+Validation Loss: 0.04126100242137909, Validation Score: 0.9459408199716827
+Memory used (in GB): 1.0095062255859375
+Time elapsed (min):  0.42
+Early stopping!
+Time elapsed (min):  0.44
+
+Train Loss: 0.03301262855529785
+Train Score: 0.9603948349701815
+
+Validation Loss: 0.026717504486441612
+Validation Score: 0.9654397346083912
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.36935806274414
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.66409683227539
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 9.771923065185547
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 9.798980712890625
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+is_BRD4    558859
+is_HSA     557895
+is_sEH     558142
+dtype: int64
+Memory used (in GB): 9.562469482421875
+
+=== Fold 2/5 ===
+Load model from previous fold
+Memory used (in GB): 9.547321319580078
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.012252922169864178, Train Score: 0.9709255525438268
+Validation Loss: 0.041756778955459595, Validation Score: 0.9773511958754557
+Memory used (in GB): 9.544075012207031
+Time elapsed (min):  0.08
+
+Epoch 10/500
+Train Loss: 0.016669997945427895, Train Score: 0.9703395971148618
+Validation Loss: 0.04452548176050186, Validation Score: 0.9771245381511015
+Memory used (in GB): 9.544227600097656
+Time elapsed (min):  0.15
+Early stopping!
+Time elapsed (min):  0.17
+
+Train Loss: 0.01859230175614357
+Train Score: 0.9802547667595665
+
+Validation Loss: 0.017842506989836693
+Validation Score: 0.9833287930928284
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.594627380371094
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.707046508789062
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 9.808589935302734
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 9.852256774902344
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 9.655380249023438
+
+=== Fold 3/5 ===
+Load model from previous fold
+Memory used (in GB): 9.638778686523438
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.027502207085490227, Train Score: 0.9664877335327192
+Validation Loss: 0.036965277045965195, Validation Score: 0.9813635010854267
+Memory used (in GB): 9.631301879882812
+Time elapsed (min):  0.08
+
+Epoch 10/500
+Train Loss: 0.03391451761126518, Train Score: 0.9685180644181558
+Validation Loss: 0.038357120007276535, Validation Score: 0.9814414818542458
+Memory used (in GB): 9.631271362304688
+Time elapsed (min):  0.17
+Early stopping!
+Time elapsed (min):  0.18
+
+Train Loss: 0.01136457547545433
+Train Score: 0.9803029730965223
+
+Validation Loss: 0.017803385853767395
+Validation Score: 0.9818548203263713
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.665027618408203
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.718570709228516
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 9.817829132080078
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 9.850784301757812
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 9.472625732421875
+
+=== Fold 4/5 ===
+Load model from previous fold
+Memory used (in GB): 9.45119857788086
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.03742828220129013, Train Score: 0.9624656648183894
+Validation Loss: 0.03330612555146217, Validation Score: 0.9962898690454673
+Memory used (in GB): 9.446174621582031
+Time elapsed (min):  0.08
+
+Epoch 10/500
+Train Loss: 0.03771602362394333, Train Score: 0.9613767696256383
+Validation Loss: 0.036114294081926346, Validation Score: 0.996059243919492
+Memory used (in GB): 9.445274353027344
+Time elapsed (min):  0.16
+Early stopping!
+Time elapsed (min):  0.18
+
+Train Loss: 0.02903873100876808
+Train Score: 0.9760489215668449
+
+Validation Loss: 0.009994464926421642
+Validation Score: 0.998052077993726
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.581489562988281
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.729530334472656
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 9.821548461914062
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 9.847667694091797
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 9.470531463623047
+
+=== Fold 5/5 ===
+Load model from previous fold
+Memory used (in GB): 9.457122802734375
+
+Training the model...
+
+Epoch 5/500
+Train Loss: 0.018685806542634964, Train Score: 0.969695207591347
+Validation Loss: 0.04081118851900101, Validation Score: 0.9695968202384658
+Memory used (in GB): 9.455524444580078
+Time elapsed (min):  0.09
+
+Epoch 10/500
+Train Loss: 0.015125797130167484, Train Score: 0.9693728467027459
+Validation Loss: 0.04143683239817619, Validation Score: 0.9693153038525011
+Memory used (in GB): 9.455459594726562
+Time elapsed (min):  0.18
+Early stopping!
+Time elapsed (min):  0.2
+
+Train Loss: 0.01629805751144886
+Train Score: 0.9820921806534038
+
+Validation Loss: 0.01876979134976864
+Validation Score: 0.9743770931977825
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.673316955566406
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.921855926513672
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 10.01480484008789
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 10.043106079101562
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 9.928878784179688
+
+=== Fold 6/5 ===
+Load model from previous fold
+Memory used (in GB): 9.917304992675781
+
+Training the model...
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+
+Epoch 5/500
+Train Loss: 0.00017701998876873404, Train Score: -0.0
+Validation Loss: None, Validation Score: None
+Memory used (in GB): 9.916339874267578
+Time elapsed (min):  0.0
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+
+Epoch 10/500
+Train Loss: 0.0002951582137029618, Train Score: -0.0
+Validation Loss: None, Validation Score: None
+Memory used (in GB): 9.916339874267578
+Time elapsed (min):  0.0
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+
+Epoch 15/500
+Train Loss: 0.0001602076372364536, Train Score: -0.0
+Validation Loss: None, Validation Score: None
+Memory used (in GB): 9.915416717529297
+Time elapsed (min):  0.0
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+
+Epoch 20/500
+Train Loss: 0.00044285625335760415, Train Score: -0.0
+Validation Loss: None, Validation Score: None
+Memory used (in GB): 9.915416717529297
+Time elapsed (min):  0.01
+/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/sklearn/metrics/_ranking.py:993: UserWarning: No positive class found in y_true, recall is set to one for all thresholds.
+  warnings.warn(
+Early stopping!
+Time elapsed (min):  0.01
+
+Train Loss: 8.561217691749334e-05
+Train Score: -0.0
+
+Validation Loss: None
+Validation Score: None
+
+
+Making predictions on test data...
+Loading processed test data from pickle/parquet files
+processed_data/test_graph_1024bits_invar0bits_chunk1.pkl
+Memory used (in GB): 9.966907501220703
+processed_data/test_graph_1024bits_invar0bits_chunk2.pkl
+Memory used (in GB): 9.996978759765625
+processed_data/test_graph_1024bits_invar0bits_chunk3.pkl
+Memory used (in GB): 10.019905090332031
+processed_data/test_graph_1024bits_invar0bits_chunk4.pkl
+Memory used (in GB): 10.050033569335938
+y_test_pred shape: (1674896, 3)
+          id  is_BRD4  is_HSA  is_sEH
+0  295246830     True   False   False
+1  295246831    False    True   False
+2  295246832    False   False    True
+3  295246833     True   False   False
+4  295246834    False    True   False
+Memory used (in GB): 9.945648193359375
+
+Finished

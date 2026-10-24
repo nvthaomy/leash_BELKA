@@ -1,0 +1,57 @@
+==========================================
+SLURM_JOB_ID = 23038986
+SLURM_JOB_NODELIST = a03-14
+TMPDIR = /tmp/SLURM_23038986
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Memory used (in GB): 0.4199333190917969
+
+Loading processed train data from pickle/parquet files
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk1.parquet
+Memory used (in GB): 46.40845489501953
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk2.parquet
+Memory used (in GB): 69.49684143066406
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk3.parquet
+Memory used (in GB): 92.53775024414062
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk4.parquet
+Memory used (in GB): 115.44915390014648
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk5.parquet
+Memory used (in GB): 124.95543670654297
+
+Train data length: 14122319
+Positive example rate in train:  0.0059936331986269395
+Memory used (in GB): 108.75803756713867
+
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 113.57202529907227
+Memory used (in GB): 114.98043441772461
+Memory used (in GB): 116.80497741699219
+          id
+0  295246830
+1  295246833
+2  295246836
+3  295246839
+4  295246842
+Memory used (in GB): 113.10747146606445
+
+X_train shape:  (14122319, 1024)
+y_train shape:  (14122319, 1)
+X_test shape:  (558859, 1024)
+Device:  cpu
+Checkpoint directory:  checkpoints_NN5_BRD4_10_1024bits_resampling-True_reweighting-False
+
+Resampling data to balance the classes with positive rate:  0.05
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/split1_separate-train_nn_morgan-1024/nn.py", line 303, in <module>
+    X_train_resample, y_train_resample = smote.fit_resample(X_train, y_train)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/imblearn/base.py", line 208, in fit_resample
+    return super().fit_resample(X, y)
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/imblearn/base.py", line 108, in fit_resample
+    self.sampling_strategy_ = check_sampling_strategy(
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/imblearn/utils/_validation.py", line 571, in check_sampling_strategy
+    _sampling_strategy_float(sampling_strategy, y, sampling_type).items()
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/imblearn/utils/_validation.py", line 410, in _sampling_strategy_float
+    raise ValueError(
+ValueError: The specified ratio required to remove samples from the minority class while trying to generate new samples. Please increase the ratio.

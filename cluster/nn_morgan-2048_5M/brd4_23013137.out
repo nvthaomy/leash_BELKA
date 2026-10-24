@@ -1,0 +1,17 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.416107177734375
+Is CUDA available:  False
+Loading processed data from pickle files
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-2048_5M/nn.py", line 182, in <module>
+    train_data_temp = pq.read_table(train_processed).to_pandas()
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 3003, in read_table
+    return dataset.read(columns=columns, use_threads=use_threads,
+  File "/home1/mynguyen/.conda/envs/py310/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2631, in read
+    table = self._dataset.to_table(
+  File "pyarrow/_dataset.pyx", line 556, in pyarrow._dataset.Dataset.to_table
+  File "pyarrow/_dataset.pyx", line 3713, in pyarrow._dataset.Scanner.to_table
+  File "pyarrow/error.pxi", line 154, in pyarrow.lib.pyarrow_internal_check_status
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+OSError: List index overflow.

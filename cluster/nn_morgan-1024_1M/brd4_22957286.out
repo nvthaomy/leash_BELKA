@@ -1,0 +1,42 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.005385006165857902, total number of train data = 1000000
+Short train data shape for protein BRD4:  (1000000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  1.71
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.98
+
+Train size:  900000
+Validation size:  100000
+
+Train positive example rate:
+ 0.00539
+Validation positive example rate:
+ 0.00534
+Overall positive example rate in train + validation:  0.005385
+
+before removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (900000, 1024)
+y_train shape:  (900000,)
+X_validation shape:  (100000, 1024)
+y_validation shape:  (100000,)
+X_test shape:  (558859, 1024)
+
+class weights:  [1.11713246e-06 1.11713246e-06]
+
+Training the model...
+slurmstepd: error: *** JOB 22957286 ON b01-04 CANCELLED AT 2024-04-24T13:26:47 ***

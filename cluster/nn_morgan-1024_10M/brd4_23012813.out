@@ -1,0 +1,25 @@
+==========================================
+SLURM_JOB_ID = 23012813
+SLURM_JOB_NODELIST = b02-20
+TMPDIR = /tmp/SLURM_23012813
+==========================================
+Number of available GPUs:  2
+Number of available CPUs:  64
+Memory used (in GB): 0.4434814453125
+Is CUDA available:  True
+Loading processed data from pickle files
+Memory used (in GB): 160.3123893737793
+
+Train size:  9000000
+Validation size:  1000000
+
+Train positive example rate:
+ 0.045711
+Validation positive example rate:
+ 0.045565
+Overall positive example rate in train + validation:  0.0456964
+Memory used (in GB): 85.94537734985352
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_10M/nn.py", line 313, in <module>
+    X_test_t = X_test_t.to(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.13 GiB. GPU 

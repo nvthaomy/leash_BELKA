@@ -1,0 +1,46 @@
+==========================================
+SLURM_JOB_ID = 23000035
+SLURM_JOB_NODELIST = a04-09
+TMPDIR = /tmp/SLURM_23000035
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  4500000
+Validation size:  500000
+
+Train positive example rate:
+ 0.05002022222222222
+Validation positive example rate:
+ 0.049818
+Overall positive example rate in train + validation:  0.05
+
+class weights:  [2.33923108e-07 4.44264764e-06]
+
+Training the model...
+Model loaded from checkpoint:  ../nn_morgan-1024_1M/checkpoints_NN4_sEH_10_trainsize-1000000_posrate-0.05_resampling-False_reweighting-False/checkpoint_epoch_30.pth
+Resuming training from epoch:  30
+Epoch 5/1000, Loss: 0.09464633464813232
+Time elapsed (min):  22.29
+Epoch 10/1000, Loss: 0.03702981024980545
+Time elapsed (min):  47.48
+Epoch 15/1000, Loss: 0.10042313486337662
+Time elapsed (min):  72.3
+Epoch 20/1000, Loss: 0.13839346170425415
+Time elapsed (min):  95.61
+Epoch 25/1000, Loss: 0.1777149885892868
+Time elapsed (min):  119.74
+Epoch 30/1000, Loss: 0.06893224269151688
+Time elapsed (min):  143.91
+Early stopping!
+Time elapsed (min):  153.31
+Train Loss: 0.04058785364031792
+Validation Loss: 0.032897528260946274
+
+Train Score: 0.9491129882601885
+Validation Score: 0.9443776761559481
+
+
+Making predictions on test data...

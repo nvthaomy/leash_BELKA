@@ -1,0 +1,10 @@
+==========================================
+SLURM_JOB_ID = 22959192
+SLURM_JOB_NODELIST = a01-04
+TMPDIR = /tmp/SLURM_22959192
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+slurmstepd: error: *** JOB 22959192 ON a01-04 CANCELLED AT 2024-04-24T14:46:53 ***

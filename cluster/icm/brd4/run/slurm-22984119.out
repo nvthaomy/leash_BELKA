@@ -1,0 +1,16 @@
+==========================================
+SLURM_JOB_ID = 22984119
+SLURM_JOB_NODELIST = b04-01
+TMPDIR = /tmp/SLURM_22984119
+==========================================
+1
+Docking inx file: ../files/test_bu.inx
+0% completed
+12% completed
+25% completed
+37% completed
+50% completed
+62% completed
+75% completed
+87% completed
+FINISHED at ligand 8

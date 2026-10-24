@@ -1,0 +1,43 @@
+==========================================
+SLURM_JOB_ID = 21588249
+SLURM_JOB_NODELIST = a13-01
+TMPDIR = /tmp/SLURM_21588249
+==========================================
+Number of available GPUs:  4
+Number of available CPUs:  32
+Is CUDA available:  True
+Loading processed data from pickle files
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.05
+Validation positive example rate:
+ 0.05
+Overall positive example rate in train + validation:  0.05
+
+X_train shape (id column only, fingerprints are retrieved on the fly):  (4500,)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00023392 0.00444444]
+
+Training the model...
+Epoch 5/5, Loss: 0.41751420497894287
+Time elapsed (min):  0.5
+Time elapsed (min):  0.5
+Train Loss: 0.41751420497894287
+Validation Loss: 0.47834640741348267
+
+Train Score: 0.640682900905434
+Validation Score: 0.5090863536131301
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/test/nn_v2.py", line 396, in <module>
+    y_test_pred = y_test_pred.numpy().flatten()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

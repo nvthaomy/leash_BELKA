@@ -1,0 +1,52 @@
+==========================================
+SLURM_JOB_ID = 23012893
+SLURM_JOB_NODELIST = a03-13
+TMPDIR = /tmp/SLURM_23012893
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.4366722106933594
+Is CUDA available:  False
+Loading processed data from pickle files
+Memory used (in GB): 161.2458038330078
+
+Train size:  9000000
+Validation size:  1000000
+
+Train positive example rate:
+ 0.05001111111111111
+Validation positive example rate:
+ 0.0499
+Overall positive example rate in train + validation:  0.05
+Memory used (in GB): 85.90864944458008
+
+Loaded model:  ../nn_morgan-1024_5M/checkpoints_NN4_sEH_10-v1_trainsize-5000000_posrate-0.05_resampling-False_reweighting-False/model.pth
+
+class weights:  [1.16960432e-07 2.22172850e-06]
+Memory used (in GB): 43.45418930053711
+
+Training the model...
+Epoch 2/1000, Loss: 0.007520551793277264
+Time elapsed (min):  17.38
+Epoch 4/1000, Loss: 0.09299872070550919
+Time elapsed (min):  39.24
+Epoch 6/1000, Loss: 0.005950547754764557
+Time elapsed (min):  66.13
+Epoch 8/1000, Loss: 0.08719288557767868
+Time elapsed (min):  86.43
+Epoch 10/1000, Loss: 0.07161644101142883
+Time elapsed (min):  108.38
+Early stopping!
+Time elapsed (min):  120.1
+Train Loss: 0.016377419233322144
+Validation Loss: 0.03248043358325958
+
+Train Score: 0.9452020979980282
+Validation Score: 0.9433981305828414
+
+
+Making predictions on test data...
+Traceback (most recent call last):
+  File "/scratch1/mynguyen/leash-BELKA/nn_morgan-1024_10M/nn.py", line 455, in <module>
+    plt.xlim(min(min(y_train), min(y_validation)) * 0.7, max(max(y_train), max(y_validation)) * 1.1)
+NameError: name 'y_train' is not defined. Did you mean: 'y_train_t'?

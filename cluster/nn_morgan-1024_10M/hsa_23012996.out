@@ -1,0 +1,10 @@
+==========================================
+SLURM_JOB_ID = 23012996
+SLURM_JOB_NODELIST = b22-06
+TMPDIR = /tmp/SLURM_23012996
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Memory used (in GB): 0.41603851318359375
+Is CUDA available:  False
+Loading processed data from pickle files

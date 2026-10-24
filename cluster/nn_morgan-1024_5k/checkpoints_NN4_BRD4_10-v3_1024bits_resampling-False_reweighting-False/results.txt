@@ -1,0 +1,2 @@
+Train Loss: 0.0052262782119214535
+Train Score: 1.0

@@ -1,0 +1,67 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading processed data from pickle files
+
+Train size:  180000
+Validation size:  20000
+
+Train positive example rate:
+ 0.005344444444444444
+Validation positive example rate:
+ 0.0059
+Overall positive example rate in train + validation:  0.0054
+
+before removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (557895, 1024)
+
+after removing None values
+X_train shape:  (180000, 1024)
+y_train shape:  (180000,)
+X_validation shape:  (20000, 1024)
+y_validation shape:  (20000,)
+X_test shape:  (557895, 1024)
+
+class weights:  [5.58540645e-06 1.03950104e-03]
+
+Training the model...
+Epoch 5/1000, Loss: 0.004990831483155489
+Time elapsed (min):  9.09
+Epoch 10/1000, Loss: 0.003397848689928651
+Time elapsed (min):  18.03
+Epoch 15/1000, Loss: 0.003114655613899231
+Time elapsed (min):  26.99
+Epoch 20/1000, Loss: 0.006212285719811916
+Time elapsed (min):  35.97
+Epoch 25/1000, Loss: 0.0035856664180755615
+Time elapsed (min):  45.02
+Epoch 30/1000, Loss: 0.003093849867582321
+Time elapsed (min):  54.03
+Epoch 35/1000, Loss: 0.03873332217335701
+Time elapsed (min):  63.18
+Epoch 40/1000, Loss: 0.00906975008547306
+Time elapsed (min):  72.33
+Epoch 45/1000, Loss: 0.007259691599756479
+Time elapsed (min):  81.43
+Epoch 50/1000, Loss: 0.002168097998946905
+Time elapsed (min):  90.46
+Epoch 55/1000, Loss: 0.00236447318457067
+Time elapsed (min):  99.47
+Epoch 60/1000, Loss: 0.00436153681948781
+Time elapsed (min):  108.45
+Epoch 65/1000, Loss: 0.0029841784853488207
+Time elapsed (min):  117.36
+Early stopping!
+Time elapsed (min):  124.5
+Train Loss: 0.010715416632592678
+Validation Loss: 0.024460509419441223
+
+Train Score: 0.32839246534296473
+Validation Score: 0.22285684164415415
+
+
+Making predictions on test data...

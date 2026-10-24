@@ -1,0 +1,71 @@
+Number of available GPUs:  0
+Number of available CPUs:  64
+Debug mode:  False
+Memory used (in GB): 0.4181098937988281
+
+Loading processed train data from pickle/parquet files
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk1.parquet
+Memory used (in GB): 46.4015007019043
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk2.parquet
+Memory used (in GB): 69.39809036254883
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk3.parquet
+Memory used (in GB): 92.34192657470703
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk4.parquet
+Memory used (in GB): 115.23424530029297
+../split1_nn_morgan-1024/train_full_test_1024bits_chunk5.parquet
+Memory used (in GB): 124.733642578125
+
+Train data length: 14122319
+Positive example rate in train:  0.006788615948981184
+Memory used (in GB): 108.53675842285156
+
+Loading processed test data from pickle/parquet files
+Memory used (in GB): 111.75719451904297
+Memory used (in GB): 113.2198600769043
+Memory used (in GB): 114.70138168334961
+          id
+0  295246832
+1  295246835
+2  295246838
+3  295246841
+4  295246844
+Memory used (in GB): 112.87141418457031
+
+X_train shape:  (14122319, 1024)
+y_train shape:  (14122319, 1)
+X_test shape:  (558142, 1024)
+Device:  cpu
+Checkpoint directory:  checkpoints_NN5b_sEH_0_1024bits_resampling-False_reweighting-False
+Initialized Net4b with loss type:  BCELoss
+Memory used (in GB): 56.96403884887695
+
+Training the model...
+
+Epoch 2/1000, Loss: 0.0029926556162536144, Train Score: 0.12647465723722598
+Memory used (in GB): 57.35307693481445
+Time elapsed (min):  39.73
+
+Epoch 4/1000, Loss: 0.003169036703184247, Train Score: 0.02385884595063424
+Memory used (in GB): 57.34197235107422
+Time elapsed (min):  81.99
+
+Epoch 6/1000, Loss: 0.0034234256017953157, Train Score: 0.023875673842254048
+Memory used (in GB): 57.264007568359375
+Time elapsed (min):  125.13
+
+Epoch 8/1000, Loss: 0.0032403955701738596, Train Score: 0.023818384405828147
+Memory used (in GB): 57.31662368774414
+Time elapsed (min):  167.7
+
+Epoch 10/1000, Loss: 0.0032480512745678425, Train Score: 0.023656317874709506
+Memory used (in GB): 57.31760025024414
+Time elapsed (min):  209.8
+Early stopping!
+Time elapsed (min):  230.52
+Train Loss: 0.003111354075372219
+Train Score: 0.023556973535608934
+
+
+Making predictions on test data...
+
+Finished

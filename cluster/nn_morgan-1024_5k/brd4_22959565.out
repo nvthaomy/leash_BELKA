@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 22959565
+SLURM_JOB_NODELIST = a03-03
+TMPDIR = /tmp/SLURM_22959565
+==========================================
+Number of available GPUs:  0
+Number of available CPUs:  64
+Is CUDA available:  False
+Loading train and test data
+Original train data shape for protein BRD4:  (98415610, 7)
+
+Generating shorter train data for protein BRD4, positive rate = 0.1, total number of train data = 5000
+Short train data shape for protein BRD4:  (5000, 7)
+
+Calculating fingerprints for train data
+Time elapsed (min):  0.03
+
+Calculating fingerprints for test data
+Time elapsed (min):  0.96
+
+Train size:  4500
+Validation size:  500
+
+Train positive example rate:
+ 0.09933333333333333
+Validation positive example rate:
+ 0.106
+Overall positive example rate in train + validation:  0.1
+
+before removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+after removing None values
+X_train shape:  (4500, 1024)
+y_train shape:  (4500,)
+X_validation shape:  (500, 1024)
+y_validation shape:  (500,)
+X_test shape:  (558859, 1024)
+
+class weights:  [0.00024673 0.00223714]
+
+Training the model...
+Epoch 5/1000, Loss: 0.30679866671562195
+Time elapsed (min):  0.25
+Epoch 10/1000, Loss: 0.14401693642139435
+Time elapsed (min):  0.5
+Epoch 15/1000, Loss: 0.14134196937084198
+Time elapsed (min):  0.77
+Epoch 20/1000, Loss: 0.11421789973974228
+Time elapsed (min):  1.04
+Epoch 25/1000, Loss: 0.10350785404443741
+Time elapsed (min):  1.3
+Epoch 30/1000, Loss: 0.045998141169548035
+Time elapsed (min):  1.56
+Epoch 35/1000, Loss: 0.025332927703857422
+Time elapsed (min):  1.81
+Early stopping!
+Time elapsed (min):  2.01
+Train Loss: 0.009146356955170631
+Validation Loss: 0.1938217431306839
+
+Train Score: 0.9982043464643002
+Validation Score: 0.7681474957034431
+
+
+Making predictions on test data...

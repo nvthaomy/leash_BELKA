@@ -1,0 +1,5 @@
+Number of available GPUs:  0
+Number of available CPUs:  24
+Is CUDA available:  False
+Loading processed data from pickle files
+slurmstepd: error: *** JOB 22973492 ON d06-15 CANCELLED AT 2024-04-25T15:37:37 ***
